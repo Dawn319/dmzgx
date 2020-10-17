@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="architecture.html" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="delicacy.html">八大菜系</a></li>
+                            <li><a href="delicacy_2.html">地方特色小吃</a></li>
+                            <li><a href="delicacy_3.html">四大烹饪手法</a></li>
+                            <li><a href="delicacy_4.html" class="active">阴阳食谱</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>阴阳食谱</h1>
+                                <P>无论是将风水学融入建筑当中，又将建筑融入风景中的的天人合一的观念，或者体现在民居中的儒家伦理等级观念，以及在饮食文化中的阴阳五行哲学思想，无一不体现中国古代哲学对各个领域文化的渗透和影响。中国饮食之所以有其独特的魅力，关键就在于它的口味精美。而美味的产生，主要在于五味调和。</p>
+                                <h2>阴阳五行哲学观念</h2>
+                                <P>
+                                    阴阳五行哲学观念是中国古代朴素的唯物论和辩证法思想,它认为世界是在阴阳二气作用的推动下产生、发展和变化的;并认为木、火、土、金、水五种最基本的物质是构成世界不可缺少的元素。这五种物质相互资生、相互制约,处于不断的运动变化之中。
+                                </P>
+                                <p>
+                                    《系辞下传 》 云“ 一阴一阳之谓道” ,《洪范》 云“一五行:一曰水,二曰火,三曰木,四曰金,五曰土。水曰润下,火曰炎上,木曰曲直,金曰从革,土爰稼穑。润下作咸,炎上作苦,曲直作酸,从革作辛,稼穑作甘。” 阴阳五行学说后来被秦汉道家、儒家和神仙方士以及后世道教所吸取。如《黄庭经》以五脏配五行,用阴阳之气炼形养身。
+                                </p>
+                                <h2>饮食文化中的五行五味</h2>
+                                <p>
+                                    中医讲“阴阳者,天地之道也,万物之纲纪,变化之父母,神明之府也。”并认为“木曰曲直”,在人体为肝;“ 金曰从革”,在人体为肺;“水曰润下 ”,在人体为肾;“土爰稼樯”,在人体为脾;“火曰炎上”,在人体为心。中医主张“医食同源”，作为中医一种重要依据，阴阳五行的思想也被应用到中医饮食养生文化之中。李时珍的“肝欲酸，心欲苦，脾欲甘，肺欲辛，肾欲咸”五位合五脏原则，详细的阐明了阴阳五行饮食对人体的影响。
+                                </p>
+                                <h3>五味调和</h3>
+                                <p>
+                                    五味的调和是食品烹饪的最高标准，是哲学与美学的结合。中国食品文化中的调和，使食品不仅供人充饥，更造就了中国美食“甘而不甘而不哝，酸而不酷，咸而不减，辛而不烈，淡而不薄，肥而不腻”，五味调成百味鲜的特色。
+                                </p>
+                                <p>
+                                    而随着四时气候的变化，五味表现亦各有侧重，“春多酸，夏多苦,秋多辛,冬多咸,调以滑甘。”由于五行之间存在相生相克的密切关系,中医要求人们根据四时气候的变化与五味相配适时调节饮食。按中医的观点，秋季饮食应注意适当名食用些酸味的食物,如杨梅、山楂、葡萄等，有助于减少秋燥对人体的影响。
+                                </p>
+                                <h3>食忌</h3>
+                                <p>
+                                    《黄帝内经》指出：“谨和五味，骨正筋柔，气血以流，腠理以密，如是则骨气以精，谨道如法，长有天命”说明了五味调和是很重要的，且若不多加注意，常会给身体健康造成极大的危害。
+                                </p>
+                                <p>
+                                    素问·四气调神大论 》指出:“圣人不治已病治未病,不治已乱治未乱” ;并认为要做到“五禁”即“肝病禁辛,心病禁咸,脾病禁酸,肾病禁甘,肺病禁苦”(《灵枢·五味》);还要做到“五裁”,即“病在筋,无食酸;病在气,无食辛;病在骨,无食咸;病在血,无食苦;病在肉,无食甘。口嗜而欲食之,不可多也,必自裁也,命曰五裁 ”(《灵枢·九针论》);此外,还有“五禁”说,《素问·宣明五气》指出:“五味所禁:辛走气,气病无多食苦;甘走肉,肉病无多食甘。酸走筋,筋病无多食酸。是谓五禁,无令多食”。
+                                </p>
+                                <h2>饮食文化中的阴阳平衡</h2>
+                                <p>
+                                    中国人很注重饮食的营养保健，主张营养成分的合理搭配，通过调配食用五谷、五果、五畜、五菜等气味、功用不同的食物，以达到阴阳平衡、脏腑协调、补精益气、养身健体的目的。
+                                </p>
+                                <p>
+                                    饮食中“阴阳学”的精髓是讲求阴阳和谐、平衡，其注意阴、阳性食物的合理搭配。如肉食为阳，素菜为阴；热菜为阳，凉蔬为阴；美酒为阳，粗茶为阴；烧炒为阳，蔬煮为阴；晒脯为阳，风干为阴；辣味为阳，淡食为阴等等。炒鱼、肉类阳性食物时，宜加入香菇、木耳等阴性蔬菜佐料；煮炖牛、羊肉等阳性食物时，宜加入胡、白萝卜等阴性蔬菜，既能去膻添味，食之又令人阴阳平和。
+                                </p>
+                                <p>
+                                    食物的摄入与人的身体健康也有紧密的关系，因此中医饮食养生主要以调理体内的阴阳为主，《素问·至真要大论》日:“谨察阴阳所在而调之,以平为期。”即通过饮食调整人体的阴阳偏盛扁衰,使其变化趋于动态的平衡。对由于阴阳偏衰的虚证患者，食养应以“补其不足”为原则如阳虚畏寒者,宜食韭菜、煨姜炖狗肉、羊肉等温补壮阳的食物:阴虚火旺者,建议吃木耳、龙眼肉炖甲鱼等滋阴润燥的食物。而对由于阴阳偏盛,表现为邪盛的实证患者，则应用寒性食物助阳热偏盛的人清泄阳热,用温热食物助阴寒偏盛之人温散阴寒。
+                                </p>
+                                <p>
+                                    《红楼梦》第四十九回中，贾母在冬季吃的炖鹿肉。鹿的全身都有药用价值。其肉是适宜冬天进补的高级营养和医疗食品。唐代的《食疗本草》说：“肉，主补中，益气力。”又说：“九月后正月前食之，则补虚赢瘦弱，利五脏，调血脉，自外皆不食，发冷病。”阴历的二月至八月间不应吃鹿肉，它能使人发冷病。贾府吃鹿肉的时间都在冬天，就是遵循这一食规。饮食文化中的阴阳五行理论长久以来明里暗里的指导着中国长久以来的烹调方式和饮食习惯，如以上例子一样，一个饮食行为依据了食品的五行归类，五味调五脏，以及阴阳调和与身体、季节的相互关系等。
+                                </p>
+                                <p>
+                                    饮食文化中不仅包含了阴阳五行的哲学观念，还渗透着美学、宗教文化、“中和为美”的哲学思想等。不仅如此，古代传统文化的各个领域都是相互渗透和融合的，最终了形成了现在我们看到的博大精深的中华文化。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

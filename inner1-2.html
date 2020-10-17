@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="inner1.html">诸子百家</a></li>
+                            <li><a href="inner1-2.html" class="active">琴棋书画</a></li>
+                            <li><a href="inner1-3.html">武术</a></li>
+                            <li><a href="inner1-4.html">民间工艺</a></li>
+                            <li> <a href="inner1-5.html">四大发明</a></li>
+                            <li><a href="inner1-6.html">武当山</a></li>
+                            <li><a href="inner1-6.html">国家博物馆</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <img class="inner-img2" src="./img/qqsh1.jpg" alt="">
+                                <h1>琴棋书画</h1>
+                                <p>琴棋书画，又称为“四艺”，因为是古代文人雅士、上流社会的士大夫修身所必须的技能，所以也被称为“文人四友”。“琴棋书画”的说法最早出现在唐代诗人张彦远的《法书要录》“辩才俗姓袁氏，梁司空昂之玄孙。辩才博学工文，琴棋书画，皆得其妙。”
+                                </p>
+                                <div style="display: block;">
+                                    <h2>琴</h2>
+                                    <hr class="hr-add">
+                                    <img class="inner-img" src="./img/qqsh2.jpg" alt="">
+                                    <p>琴，现称“古琴”，也叫作“玉琴”、“七弦琴”，是在孔子时期就很盛行的乐器，距今至少有三千年以上的历史，是我国最早的弹拨乐器之一。琴的创造者不详，根据文献记录有“舜作五弦之琴以歌南风”、“神农作琴”等各种说法。最负盛名的四大名琴分别是齐桓公的“好钟”，楚庄王的“绕梁”，司马相如的“绿绮”，蔡邕（yong）的“焦尾”。 但是琴棋书画中的“琴”，虽然主要是指“古琴”这一种乐器，但是也可以泛指中国其他乐器，如胡琴、月琴、箫、筝、琵琶、笛等。也就是说，懂音律，会演奏乐器。
+                                    </p>
+                                </div>
+                                <div style="display: block;">
+                                    <h2>棋</h2>
+                                    <hr class="hr-add">
+                                    <img class="inner-img" src="./img/qqsh3.jpg" alt="">
+                                    <p>
+                                        棋，在古代主要是指围棋，少数情况下也可以指中国象棋。围棋在古代称为“弈”，意思是“你投一子我投一子”，围棋的含义是“一种以包围和反包围战术决出胜负的棋戏”。在中国古代，被尊称为棋圣的共有五位，分别是三国时期的严子卿、马绥明，清代的黄龙士、范西屏和施襄夏。
+                                    </p>
+                                </div>
+                                <div>
+                                    <h2>书</h2>
+                                    <hr class="hr-add">
+                                    <img class="inner-img" src="./img/qqsh4.jpg" alt="">
+                                    <p>
+                                        书，书法想必大家都不陌生，书法是汉字的书写艺术，是一种很独特的视觉艺术。在中国古代，名家的孩子从小就开始练习书法。书法能够把书写者个人的生活感受、学识、个性、修养等悄悄地折射出来，所以，通常有“字如其人”、“书为心画”的说法。另一方面在古代如果想走仕途，如果书法不好，那科举的门都找不到。
+                                    </p>
+                                </div>
+                                <div>
+                                    <h2>画</h2>
+                                    <hr class="hr-add">
+                                    <img class="inner-img" src="./img/qqsh5.jpg" alt="">
+                                    <p>
+                                        画，指的是中国画，主要是用毛笔蘸水、墨、彩，在帛或宣纸上作画的一种中国传统绘画。国画的题材丰富，主要分为人物画、山水画、花鸟画。 国画不仅仅是一种绘画形式，更是想用艺术来表达一个概念和一个思想。国画的三种题材其实概括了宇宙和生命的三个方面：山水画整合人与自然，代表了人与自然之间的关系；而花鸟画表达可自然与人和谐相处；人物画描绘人类社会和人类之间的关系。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

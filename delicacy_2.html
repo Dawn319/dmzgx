@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="architecture.html" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="delicacy.html">八大菜系</a></li>
+                            <li><a href="delicacy_2.html" class="active">地方特色小吃</a></li>
+                            <li><a href="delicacy_3.html">四大烹饪手法</a></li>
+                            <li><a href="delicacy_4.html">阴阳食谱</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>地方特色小吃</h1>
+                                <h2>台北</h2>
+                                <p>鸳鸯火锅很多香港艺人都为之疯狂，据闻郭富城在离开时就把火锅材料打包回去再过瘾。火锅最重要的是汤底，有多少店就有多少种汤底，但没有人知道汤底 的材料和制作方法。跟吃川菜一样，火锅的麻辣程度是分等级的，鸳鸯火锅是一半辣一半不辣，任君选择。有别于其它火锅的是，材料里不可缺少的是鸭血，还有豆 腐、牛肚、牛什、鸡肉等。价格丰俭由人，折合人民币100元到上千元。
+                                </p>
+                                <p>
+                                    民间工艺是大众的生活的民俗的艺术。是经济和文化的双重载体。民间工艺有：编织、微雕、陶瓷、布艺、木艺、果核雕刻、刺绣、毛绒、皮影、泥塑、紫砂、蜡艺、文房四宝、书画、铜艺、装饰品、漆器等。
+                                </p>
+
+
+                                <h2>台南</h2>
+                                <p>
+                                    炒鳝鱼台南特产。佐料有糖、盐，以及九王，虽然用炒的做法，但鱼依然可以保持鲜美，还带着淡淡的甜味。
+                                </p>
+                                <h2>香港</h2>
+                                <p>
+                                    烧腊烧腊包括烧鹅、乳鸽、乳猪、叉烧以及一些卤水菜式。一般是先用秘制的酱汁腌制一段时间再放到炉里烤，烧鹅、乳猪皮脆，肥美，口味略带广东人喜爱 的甜味。深井烧鹅、花田乳鸽是其中的“老字号”。广东人逢年过节上香拜神都会带上乳猪，电影（视）开镜也喜切乳猪图吉利。卤水菜式相对清淡，卤水鹅掌 （翼）、bai卤水鸭肾等。
+                                </p>
+                                <h2>安徽</h2>
+                                <img class="inner-img" src="./img/ms2_anHui.jpg" alt="">
+                                <p>
+                                    黄山臭鳜鱼
+                                </p>
+                                <p>
+                                    安徽不得不吃的，就是黄山臭鳜鱼了。几百年前，徽州有个姓苗的知府，他特别喜欢吃鱼，最喜欢吃的就是鳜鱼，一天不吃就要发脾气。但是徽州生产不出大鱼，他们要去其他地方把鱼运进徽州，来去要好几天呢。那时候也没有顺丰，运输鳜鱼很麻烦，天热的时候容易坏，只能天凉了运。有一个经常给苗知府送鳜鱼的小王，名叫王小二，想趁天气凉的时候赚一笔钱，就雇了人去收购活鳜鱼。真是没想到，收购了一大堆鳜鱼，结果在运输途中，天气突然变热了，鳜鱼死的死臭的臭，把小王都气哭了。小王叫挑夫把鱼鳞刮了，鳃摘了，肠子也去了，再给鱼抹上厚厚的盐。小王怕直接送到官府挨揍，先私下尝尝这腌鳜鱼的味道如何。结果奇迹发生了。这臭鳜鱼红烧了之后，比新鲜的鳜鱼还好吃，大家都大吃一惊…
+                                </p>
+                                <p>
+                                    安徽特色小吃品种繁多，历史悠久，独具地方特色。在当地到处都能找到小吃的身影，实惠又美味，去安徽游玩的时候别忘了大吃一顿安徽的特色美食。提到安徽美食，闻名遐迩的徽菜总以重色重味的特点让人欲罢不能，作为一个老天格外恩宠的地方，各种知名、不知名的风情小吃也在这块土地上生生不息地存在，并吸引着无数吃货的灼热目光
+                                </p>
+                                <h2>哈尔滨</h2>
+                                <p>
+                                    得莫利炖活鱼哈尔滨郊区靠着马路边有一个叫得莫利的小村庄，村里人在路边上开了个小吃店招待路上歇脚吃 饭的过路人。把豆腐、宽粉条子和乌苏里江里捞上来的鲤鱼炖在一起吃是老乡们吃个热乎的老做法。后来菜的做法不胫而走，传遍了城里的大街小巷。哈尔滨人说： 要是外地朋友不喜欢吃西餐和东北大菜，咱们吃得莫利炖活鱼去。
+                                </p>
+                                <h2>梅州</h2>
+                                <p>
+                                    客家酿豆腐千年古城梅州，有“客都”之称，中原人“衣冠南迁”到这里，不但带来了读书皆上品的风气，也形成了自己的饮食文化客家菜。火柴盒大小的水 豆腐炸成金黄色，把猪肉鱼肉做成的馅“酿”入其中，放进葱花，香油，盛在鸡汤瓦煲内焖着，直到香气四溢。想来到了梅州的客家人一时无麦可包饺子，才创出如 此美味。
+                                </p>
+                                <h2>齐齐哈尔</h2>
+
+                                <p>
+                                    杀猪菜过年了，村里一户人家杀了头猪，这后腰腿的都是好东西，剩下的肥肉下水怎么吃？这就有了杀猪菜了：自家腌的 酸菜做的血肠再加上肥肉原料就齐了。要好吃大肥肉不能腻，要切成片放进过锅里煮了过油，然后和酸菜、血肠一起炖。农村里灶膛火映着大娘的脸，锅里放了姜蒜 的炖菜煮得咕嘟，咕嘟。等这杀猪菜传到了城市，城里饭店加多了工序，用足了料。
+                                </p>
+                                <h2>湘潭</h2>
+                                <p>
+                                    毛家红烧肉毛家菜因毛主席故乡而闻名，毛家红烧肉主席赞不绝口。正宗的毛家饭店位于湘潭韶山冲，这里的红烧肉选的是五花腩，把五层三花的肚腩肉用冰 糖八角桂皮先蒸再炸后入锅放豆豉作料，做法非常讲究和复杂。做好的毛家红烧肉色泽金黄油亮，肥而不腻，十分的香润可口。
+                                </p>
+                                <h2>厦门</h2>
+                                <p>
+                                    水煮活鱼这道菜近年的走红至少说明胃口一直非常挑剔甚至顽固的厦门人对川菜的认同，很多人把这归结为这个城市外来人口的剧增所导致的外来菜式在厦门 的大举登陆。仅2000年一年，厦门这个人口仅60万的小城稍上档次的川菜馆就新开了近30家。但水煮活鱼的味道也的确不错，虽用料简单且大众（草鱼）， 烹制方法也未必奇特（水煮），但其辣与鲜的奇妙结合既满足了厦门人对鱼类海鲜持久不易的好味，同时也是其传统“沙茶情结”在整个川菜流行大趋势中的延
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

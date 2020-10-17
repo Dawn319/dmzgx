@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico"/>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+<body>
+<div style="padding:0 16px;">
+    <!-- 第二个界面 -->
+    <div>
+        <div class="firsts bgimg2 " style="display: block;" id="HOME">
+            <!-- 导航栏 -->
+            <div class="container">
+                <!-- 导航栏左边 -->
+                <ul class="nav nav-h " style="background-color: transparent;">
+                    <li>
+                        <a href="index.html" class="hover-shadow "
+                           style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                            <img src="./img/home.png" alt="">
+                            <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                        </a>
+                    </li>
+                    <!-- 导航栏右边 -->
+                    <li class="right hover-shadow  dropdown ">
+                        <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                        <div style="padding: 10px;" class="drop-content">
+                            <div style="padding-bottom: 2px;">
+                                <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                            </div>
+                            <div style="padding-top: 2px;">
+                                <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="right hover-shadow " style="padding: 10px;">
+                        <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                    </li>
+                    <li>
+                        <div style="width: 200px;height: 10px;"></div>
+                    </li>
+                    <li class="right">
+                        <a href="architecture.html" class="hover-shadow nav-font">
+                            <img src="./img/build2.png" alt="">
+                            <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                        </a>
+                    </li>
+                    <li class="right">
+                        <a href="delicacy.html" class="hover-shadow nav-font">
+                            <img src="./img/meishi.png" alt="">
+                            <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                        </a>
+                    </li>
+                    <li class="right">
+                        <a href="inner1.html" class="hover-shadow nav-font">
+                            <img src="./img/ding.png" alt="">
+                            <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                        </a>
+                    </li>
+                    <li class="right">
+                        <a href="inner2.html" class="hover-shadow nav-font">
+                            <img src="./img/recommend.png" alt="">
+                            <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- form表单+modal弹出 -->
+                <div class="container">
+                    <div class="modal " id="OPEN">
+                        <div class="modal-dialog ">
+                            <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                <div class="content shadow-2" style="background-color: sandybrown;">
+                                    <form action="#" method="POST">
+                                        <div class="form-group-label ">
+                                            <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                            </label>
+                                            <input type="text" class="form-control" id="name" name="name" value="">
+                                        </div>
+                                        <div class="form-group-label ">
+                                            <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                            </label>
+                                            <input type="text" class="form-control" id="email" name="email" value="">
+                                        </div>
+                                        <div class="form-group-label ">
+                                            <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                            </label>
+                                            <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group-label ">
+                                            <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                            </label>
+                                            <textarea style="height: 150px;" id="context" name="context"
+                                                      class="form-control " id="" cols="80" rows="1"></textarea>
+                                        </div>
+                                        <div class="bar">
+                                            <button class="button" style="background-color: tomato;" type="button"
+                                                    onclick="CLOSE()">提交
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 侧导航栏 -->
+            <div class="container">
+                <div class="col l2">
+                    <ul class="nav-2">
+                        <li><a href="architecture.html" class="active">宫廷府邸建筑</a></li>
+                        <li><a href="architecture_2.html">防御守卫建筑</a></li>
+                        <li><a href="architecture_3.html">纪念性和点缀性建筑</a></li>
+                        <li><a href="architecture_4.html">陵墓建筑</a></li>
+                        <li><a href="architecture_5.html">园囿建筑</a></li>
+                        <li><a href="architecture_6.html">居民建筑</a></li>
+                        <li><a href="architecture_7.html">宗教建筑</a></li>
+                    </ul>
+                </div>
+                <div class="col l10">
+                    <div class="inner-right">
+                        <div class="inner-right-left">
+                            <h1>宫廷府邸建筑</h1>
+                            <img class="inner-img" src="./img/jz_1.jpg" alt="">
+                            <h2>特点</h2>
+                            <p>坐北朝南 对称对名</p>
+                            <p>棱角分明 色多枣红</p>
+                            <p>宅大有水 山亭榭台</p>
+                            <p>风水相合 花木相称</p>
+                            <h2>含义</h2>
+                            <p>
+                                宫殿建筑，又称宫廷建筑，为传统建筑之精华。古代皇帝为了巩固自己的统治，突出皇权的威严，满足精神生活和物质生活的享受而建造的规模巨大、气势雄伟的建筑物。这些建筑大都金玉交辉、巍峨壮观。
+                                中国古代宫殿建筑采取严格的中轴对称的布局方式，古代宫殿建筑物自身也被分为两部分，即“前朝后寝”：“前朝”是帝王上朝治政、举行大典之处，“后寝”是皇帝与后妃们居住生活的所在。
+                            </p>
+                            <h2>意义</h2>
+                            <img class="inner-img" src="./img/jz_2.jpg" alt="">
+                            <P>宫廷府邸建筑是古代皇帝为了巩固自己的统治，突出皇权的威严，满足精神生活和物质生活的享受而建造的规模巨大、气势雄伟的建筑物。
+                            </p>
+                            <p>
+                                为了体现皇权的至高无上，表现以皇权为核心的等级观念，中国古代宫殿建筑采取严格的中轴对称的布局方式：中轴线上的建筑高大华丽，轴线两端的建筑相对低小简单。由于中国的礼制思想里包含着崇敬祖先、提倡孝道和重五谷、祭土地神的内容，中国宫殿的左前方通常设祖庙供帝王祭拜祖先，右前方则设社稷坛供帝王祭祀土地神和粮食神，这种格局也被称为”左祖右社“。古代宫殿建筑物自身被分为两部分，即“前朝后殿”：“前朝”是帝王上朝治政、举行大典之处，“后寝”是皇帝与后妃们居住生活的所在。
+                            </p>
+
+                            <h2>典型建筑</h2>
+                            <h3>故宫</h3>
+                            <hr class="hr-add">
+                            <p>
+                            <p>
+                                北京故宫是中国明清两代的皇家宫殿，旧称紫禁城，位于北京中轴线的中心。北京故宫以三大殿为中心，占地面积72万平方米，建筑面积约15万平方米，有大小宫殿七十多座，房屋九千余间。北京故宫于明成祖永乐四年（1406年）开始建设，以南京故宫为蓝本营建，到永乐十八年（1420年）建成。它是一座长方形城池，南北长961米，东西宽753米，四面围有高10米的城墙，城外有宽52米的护城河。紫禁城内的建筑分为外朝和内廷两部分。外朝的中心为太和殿、中和殿、保和殿，统称三大殿，是国家举行大典礼的地方。内廷的中心是乾清宫、交泰殿、坤宁宫，统称后三宫，是皇帝和皇后居住的正宫。北京故宫是世界上现存规模最大、保存最为完整的木质结构古建筑之一，是国家AAAAA级旅游景区，
+                                1961年被列为第一批全国重点文物保护单位； 1987年被列为世界文化遗产。</p>
+
+                            <img class="inner-img" src="./img/jz_gongDian.jpg" alt="">
+                            <h4>营建原则</h4>
+                            <p>
+                                故宫严格地按《周礼·考工记》中“前朝后市，左祖右社”的帝都营建原则建造。整个故宫，在建筑布置上，用形体变化、高低起伏的手法，组合成一个整体，在功能上符合封建社会的等级制度。同时达到左右均衡和形体变化的艺术效果。
+                                中国建筑的屋顶形式是丰富多彩的，在故宫建筑中，不同形式的屋顶就有10种以上。以三大殿为例，屋顶各不相同。故宫建筑屋顶满铺各色琉璃瓦件。
+                                主要殿座以黄色为主。绿色用于皇子居住区的建筑。其它蓝、紫、黑、翠以及孔雀绿、宝石蓝等五色缤纷的琉璃，多用在花园或琉璃壁上。太和殿屋顶当中正脊的两端各有琉璃吻兽，稳重有力地吞住大脊。吻兽造型优美，是构件又是装饰物。一部分瓦件塑造出龙凤、狮子、海马等立体动物形象，象征吉祥和威严，这些构件在建筑上起了装饰作用
+                            </p>
+                            <h4>门票设置</h4>
+                            <p>
+                                北京故宫门票价格旺季60元，淡季40元。2014年7月1日，北京故宫限流分流方案公布了试行方案，具体为3项试行方案——年票方案、主题免费开放日方案、单日内分流方案。故宫年票采用实名制，按自然年度发售年票，每年10月开始发售下一年度年票。按照年票方案，在一年内（自然年）可凭票参观10次（不含专馆），每年10月开始发售下一年度年票。
+                                2014年12月开始，故宫在淡季每月第一个星期三试行主题免费开放日，以此引导部分观众避开参观的高峰期，获得更好的参观环境与文化氛围。
+                                教师、大专院校学生、现役军人等五类人群将有机会在特定时间免费参观故宫。
+                                2015年6月13日，第十个“中国文化遗产日”，故宫将正式实行每日8万人次的强制限流措施。为防止黄牛党利用故宫的限流政策高价倒卖门票，2015年6月13日，故宫将同步实行全员实名制购票政策，并实行旅行社团队全部通过网络预订门票，也提倡散客通过网络预订门票，逐步提高网络预售比例。淡季网络门票降至20元，并适时推出手机售票除了网上购票，故宫还将推出手机售票。
+                                2017年5月，故宫博物院召开新闻发布会，院长单霁翔称，拟在2017年第四季度（10月下旬）起，取消现场售票，实行全网络售票参观，最终实现“分时段售票、分时段参观、有效控制观众流量”。
+                            </p>
+
+
+                            <h3> 秦咸阳宫</h3>
+                            <hr class="hr-add">
+                            <p>
+
+                                <img class="inner-img" src="./img/jz_gongDian4.jpg" alt="">
+                            <h4>简介</h4>
+                            <p>咸阳宫是秦帝国的皇宫，位于今陕西省咸阳市东，和西安市部分重叠。公元前350年秦孝公迁都咸阳，开始营建宫室，至迟到秦昭王时，咸阳宫已建成。
+                                最初咸阳宫位于秦都咸阳城的北部阶地上，在秦始皇统一六国过程中，不断进行扩建。据记载，该宫“因北陵营殿”，为秦始皇执政“听事”的所在。
+                                秦末项羽入咸阳，屠城纵火，咸阳宫大半夷为废墟。
+                                据考古专家推测，整个关中地区都是都城，咸阳宫西路直至阿房宫，再至终南山修建门阙，东路直至极庙（信宫）途中架起阁道，犹如空中走廊整体连接，整体是按照星象规划的。把南边的秦岭，西边的陇山北边的北部山系，和东边的崤山黄河做为外部城墙。秦朝在关中地区修建了300多个离宫别馆，而且这些离宫别管之间都是用各种道路连接起来，复道、甬道、阁道。考古专家据此推断，广义上咸阳宫总面积可能相当于汉长安城的近百倍，故宫的两千多倍。
+                            </p>
+                            <h4>购票攻略</h4>
+                            <p>遗址暂时不对外开放。想要了解，可以参观秦咸阳zhi宫遗址博物馆dao。
+                                秦咸阳宫遗址是回中国战国时期秦国答的都城遗址，而秦咸阳宫遗址博物馆是一个以文物遗址和历史地段构成的全面反映秦代社会文化的综合性遗址博物馆。博物馆建筑外形设计上小大下，平顶四阿的覆斗形，风格独特。博物馆共分为三个陈列室：第一陈列室主要陈列秦咸阳城沙盘模型，集中反映秦代咸阳周边及关中地区宫室、城市、苑囿等星罗棋布的壮观景象。第二陈列室主要介绍秦咸阳城遗址的考古发掘成果，展出宫殿遗址出土地的部分珍贵文物，其中龙凤纹空心砖、秦诏版、秦壁画等都是秦咸阳城出土的精品。第三陈列室主要为秦咸阳宫遗址保护规划示意沙盘。
+                            </p>
+
+                            <p>门票 10元/人次</p>
+                            <p>开放时间 08:00~17:00</p>
+                            <p>地址 渭城区窑店镇牛羊村北</p>
+                            <p>交通 咸阳市内乘5路旅游专线车直达。</p>
+
+
+                            </p>
+
+                            <h3>布达拉宫</h3>
+                            <hr class="hr-add">
+                            <p>
+
+                                <img class="inner-img" src="./img/jz_gongDian5.jpg" alt="">
+                            <h4>简介</h4>
+                            <p>
+                                坐落于中国西藏自治区拉萨市郊西北的玛布日山上的布达拉宫，是闻名世界的的宫堡式建筑群，它集中体现了藏族古建筑艺术的精华和古藏民高超的智慧与才艺。它是历世达赖喇嘛的“冬宫”，是供奉历世达赖喇嘛灵塔的地方，又是西藏过去政教
+                                合一的统治中心。从五世达赖起的重大的宗教、政治仪式均在此举行。布达拉宫早在公元7世纪的时候就开始建造，至今已近1400年的历史。据说当时西藏的吐薔王松赞干布为迎娶唐朝的文成公主，特别在拉萨海拔3,700多米的红山上建造了1000间九层楼宫宇一布达拉宫。
+
+                            <p>
+                                依山而建的布达拉宫规模宏伟，现占地41万平方米，仅建筑面积就达到了13万平方米。宫体为石木结构主楼有13层，自山脚向上，直至山顶高达115米。5座宫顶覆盖镏金铜瓦，金光灿烂，气势雄伟。
+                            </p>
+
+                            <p>
+                                由于历史的变迁，当松赞干布建立的吐暮王朝灭亡后，古老的宫堡也大部分被毁于战火，直至公元十七世纪(公元1645年，五世达赖被清朝政府正式封为西藏地方政教首领后，代达赖又相继进行过扩建，于是布达拉宫就成了今天规模，并且正式成为了藏传佛教的圣地。布达拉宫的整体建筑主要由东部的白宫(达赖喇嘛居住的部分)，中部的红宫(佛殿及历代达赖喇嘛灵塔殿)及西部白色的僧房(为达赖喇嘛服务的亲信喇嘛居住)组成。在红宫前还有一片白色的墙面为晒佛台，这是每当佛教节庆之日，用以悬挂大幅佛像的地方。布达拉宫是神圣的代名词，素有“高原圣殿”的美誉。它是西藏的象征也是中华民族团结向上的表征。因为它凝结了藏民无穷的智慧和汉藏文化交流的伟大结晶。布达拉宫是藏式建筑的杰出代表，也是中华民族古建筑的精华之作。由于宫内收藏了西藏特有的、在棉布绸缎上彩绘的唐卡，以及历代文物。布达拉宫在1961年被列入中国重点文物保护单位。并在1994年12月初被联合国教科文组织列入《世界遗产名录》
+                            </p>
+                            </p>
+                            <h4>购票攻略</h4>
+                            <p>★布达拉宫门票预约方式有四种★</p>
+                            <p>
+                                1、排队预约：排队预约时间早上9点至下17点，今天预约明天参观布达拉宫进去的时间，可以提前半小时进布达拉宫。排队预约地点在布达拉宫正门。排队预约布达拉宫所有预约券均为免费预订，到布达拉宫内售票（半山腰上售票）
+                                可以凭有效证件为自己预约布达拉宫门票，也可以帮他人预约布达拉宫门票，但每人凭包括本人在内的有效证件最多领取4张预约券。
+                            <p>2、网上预约售票：布达拉宫网上购票仅支持支付宝付款。购票有效证件为居民二代身份证或临时身份证游客可通过本网站（www.potalapalace.cn
+                                ）提前购买7日内的门票。进入网站→简体中文（在右下角）→门票预约→免费注册
+                                （注册时，用户需填写真实有效的购票信息。当用户信息发生变动时，请及时更新。如果因用户提供的资料不真实、不准确而造成的一切后果均由该用户承担。）→登录（散客登录）→可以进入购票页面，自助购买系统内预留的参观门票。→订单提交后，系统会为您保留30分钟的网上支付时间，如超出时间未完成支付，则不再通知购票人，系统自动取消订单。订票成功后，系统会将详细购票信息及时发送至您的注册邮箱。
+                                注：门票参观时间只限当日有效，按规定时间参观布达拉宫，如果因自身原因导致您未能按时参观，责任自负。网络购票人需严格按照参观时间，通过本人身份证进入布达拉宫，并在正式售票窗口凭身份证换取正式门票，完成检票后，即可参观布达拉宫。
+                                为保证游客顺利通过各门闸机，
+                                凭诸如已经消磁的身份证或临时身份证，通过网上购票的游客，需于参观前24小时内持证件前往布达拉宫门票预约处免费领取参观券。注册用户可为他人代购门票。每个帐户可购买5张门票，其中1张为本人的门票。
+                                由于自然灾害和突发事件等不可抗拒因素造成的不能按时参观，游客可以通过本网早于参观时间24小时前申请退票。退票时，系统会自动收取30%（按订单金额）的手续费，参观当日不得退票。
+                                通过网络购买的门票不得改签，也不得转让。网上购票用户需负责保护自己的账号和密码。由个人原因，造 成的帐号和密码泄露所致的一切后果由用户自己承担。
+                            </p>
+                            <p>3、团队购票方式：旅行社代办，参团或由旅行社代订布宫门票</p>
+
+                            <p>4、单位介绍信：由拉萨市政府负责接待的对口单位提出申请，相关部门审批后直接购票。</p>
+                            </p>
+                            <h4>★参观布达拉宫注意事项★</h4>
+                            <p>1. 参观布达拉宫时请不能携带如（液体、水）化装品、危险物品</p>
+                            <p>2. 参观布达拉宫时不要忘记携带身份证原件；购买优惠票的游客需要出示优惠证原件。</p>
+                            <p>3. 网上预订布达拉宫门票的游客必须在规定时间参观布达拉宫，逾期责任自负。</p>
+                            <p>4.
+                                现场预约布达拉宫门票的游客，如果不能按时参观的，需及时前往布达拉宫预约窗口申请延期或取消预约。否则，布达拉宫票务系统会自动将您的购票信息加入黑名单，一周内无法再次购票。</p>
+                            <p>5.参观布达拉宫时请自觉爱护公共设施，不要随意触摸文物，殿堂内请勿拍照和摄像 </p>
+
+
+                            </p>
+
+                            <h3>唐大明宫</h3>
+                            <hr class="hr-add">
+                            <p>
+                                <img class="inner-img" src="./img/jz_gongDian6.jpg" alt="">
+                            <h4>简介</h4>
+                            <p>
+                                初建於公元634年，当时，李世民在城东北角禁苑内的龙首塬上修“永安宫”让其父李渊在那里临时消暑，但还未完工，李渊就死去，于是贞观九年（公元635年）更名为“大明宫”。龙朔二年(公元662年)重加修建，改名蓬莱宫。咸亨元年(公元670年)又改名含元宫，长安元年(公元701年)复名大明宫。从此，直至唐末的200余年间，唐皇帝都住在大明宫（除开元年间的唐玄宗一度在兴庆宫），并成为皇帝处理朝政、接见群臣、举行阅兵仪式等重要大活动的地方。这里也就成为国家的政治中心。　大明宫可堪称中国古建筑的杰作，但中和三年(883)、光启元年(885)与乾宁三年(896)连遭兵火，遂成废墟。1957～1962年，中国科学院考古研究所对遗址进行勘察与发掘，1980～1984年又做了重点发掘。这样才使得遗址内的含元殿、麟德殿、三清殿、翔鸾和栖凤两阁及太液池、蓬莱亭等遗址清楚可见。
+
+                            </p>
+                            <h4>旅游攻略</h4>
+                            <p>旅游攻略： 1.园内设免费参观区和收费区，免费区四周进出口很多，旅客进出非常方便。
+                                2.园内每天举行6场表演，包括丹凤门前的换岗仪式、含元殿前的丹凤迎宾和大唐卫队巡逻、皇家舞马、红粉马球、皇家骑警巡游。
+
+                            </p>
+                            <p>
+                                最佳游览时间： 四季皆可
+                            </p>
+                            <p>
+
+                                景区位置： 中国>陕西省>西安市
+                            </p>
+                            <p>
+
+                                到达方式：
+                                市内乘坐913、2、104、209、16、17、22、38、46、216、262、309、513、409、517、703、707、708、801路公交车到含元路口站下车，东行100米（太华路一线）即到，
+                                或乘坐717、723、528路公交车到太华路下车，西行200米（自强东路路口）即到，
+                                或乘坐2、216、262、528、717、723路公交车到童家巷站下车（自强东路）即可到达大明宫国家遗址公园。 也可乘坐地铁2号线在“大明宫西”站下车。
+                            </p>
+                            <p>
+
+                                唐大明宫遗址门票价格： 门票：60元，套票：90元（含景区门票、影票、摆渡电瓶车票） 《大明宫传奇》影片票价：30元/人，考古探索中心票价：20元/人
+
+                            </p>
+                            <p>
+                                景区开放时间： 09:30-18:00
+                            </p>
+
+                            </p>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="container">
+                <footer class="footer footer-duiqi">
+                    <p class="icon-bar">
+                        <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                        <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="./index.html" target="_blank"><i class="fa fa-facebook-official"
+                                                                  aria-hidden="true"></i></a>
+                        <a href="./index.html" target="_blank"><i class="fa fa-twitter-square"
+                                                                  aria-hidden="true"></i></a>
+                    </p>
+                    <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a
+                            href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;"
+                            target="_blank">AHPU</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/index.js "></script>
+</body>
+
+</html>

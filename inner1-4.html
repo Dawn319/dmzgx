@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="inner1.html">诸子百家</a></li>
+                            <li><a href="inner1-2.html">琴棋书画</a></li>
+                            <li><a href="inner1-3.html">武术</a></li>
+                            <li><a href="inner1-4.html" class="active">民间工艺</a></li>
+                            <li> <a href="inner1-5.html">四大发明</a></li>
+                            <li><a href="inner1-6.html">武当山</a></li>
+                            <li><a href="inner1-6.html">国家博物馆</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>民间工艺</h1>
+                                <p>
+                                    严格地讲，工艺指对物体的加工过程，包括对艺术品的加工技艺。民间工艺的“民间”二字，并不是指产品的生产场所或所在地，而指的是产品的内含。用民间工艺加工生产出来的民间工艺品，除过欣赏者眼睛可以看到的表象外，还有更为丰富的内涵。这些内涵，才是把民间工艺和普通工艺区别开来的标志。
+                                </p>
+                                <p>
+                                    民间工艺是大众的生活的民俗的艺术。是经济和文化的双重载体。民间工艺有：编织、微雕、陶瓷、布艺、木艺、果核雕刻、刺绣、毛绒、皮影、泥塑、紫砂、蜡艺、文房四宝、书画、铜艺、装饰品、漆器等。
+                                </p>
+                                <h2>内画</h2>
+                                <img class="inner-img" src="./img/mjgy1.jpg" alt="">
+                                <p>
+                                    内画艺术是中国特有的一种艺术形式，分为京、冀、鲁、粤四大流派，其中尤以冀派内画水平最高、规模最大、发展最快、影响最大，不久前已入选国家非物质文化遗产保护名录，冀派内画的发源地——河北衡水，还被文化部命名为“中国内画之乡”。内画艺术是中国特有的一种艺术形式，它的产生起源于画鼻烟壶。内画的画法是以特制的变形细笔，在玻璃、水晶、琥珀等材质的壶坯内，手绘出细致入微的画面，格调典雅、笔触精妙。内画艺术家有着各种不同的技艺，其中河北墨海艺苑的内画艺术家赵庆华擅长把人物照片栩栩如生的画在水晶球内。其作品惟妙惟肖，是为礼仪馈赠的佳品。
+
+                                </p>
+                                <h2>风筝</h2>
+                                <p>
+                                    中国的风筝艺术；不仅因民族文化传统的悠久而源远流长，而且团地域文化的丰富多彩而各有千秋，它与各个历史时期、各个地域、各个民族的音乐、舞蹈、戏剧、民俗、宗教等有千丝万缕的联系。由于遍布全国各地的风筝艺人和各行各业风筝制作者不同的生活阅历、不同的文化层次以及不同的知识结构，在风筝制作中，便形成了百花齐放的艺术体系和风格各异的流派。 　北京风筝，潍坊风筝，天津风筝，南通风筝，江南风筝，台湾风筝
+                                </p>
+                                <h2>编织</h2>
+                                <p>
+                                    将植物的枝条、叶、茎、皮等加工后，用手工进行编织的工艺。中国编织工艺品按原料划分，主要有竹编、藤编、草编、棕编、柳编、麻编等 6大类。编织工艺品的品种主要有日用品、欣赏品、家具、玩具、鞋帽等。其中日用品有簟、席、匾、凳、笊篱、筲箕、蒸笼、炊帚、畚箕、畚斗、坐垫、靠垫、 各式提篮、盆套、箱、旅游吊床、盘、门帘、筐、灯罩等；欣赏品有挂屏、屏风及人物、动物造型的编织工艺品。浙江、江苏、湖南、四川、福建、广东等地的草编、藤编、竹编等至今仍在不断发展。
+                                </p>
+                                <h2>微雕</h2>
+                                <img class="inner-img" src="./img/mjgy4.jpg" alt="">
+                                <p>
+                                    中国微雕历史源远流长。远在殷商时期的甲骨文中，就出现微型雕刻。战国时的玺印小如累黍，印文却有朱白之分。众所周知的王叔远的《核舟记》，也是中国历史上微雕艺术的经典之作。我们的老师郭月明认为：精微艺术贵在精微，也难在精微，因为它不仅术其微小，还必须在微小之中再现艺术神采、韵味。每一件精微艺术品，无不是成功于所实的基本功之上，同时，又缀满了心血和汗水。
+                                </p>
+                                <p>
+                                    他期望我们新一代的微雕艺人能学有所成，却不奢望艺术上的投机取巧，一蹴而就；他期望我们的作品有朝一日得到社会的承认，他耻于以媚俗之作去欺世盗名。时至今日，他依然故我地在斗室中埋头磨砺，不知晨昏，也无所谓冬夏；在精微艺术这片充满生机的田野上耕耘不止，不问收获，也无所谓个人名利。淡泊宁静，耐得寂寞；超然物外，求索不己，这就是中国微雕艺人学艺生活的真实写照。
+                                </p>
+                                <h2>陶瓷</h2>
+                                <img class="inner-img" src="./img/mjgy5.jpg" alt="">
+                                <p>
+                                    澄城尧头陶瓷交趾陶艺品 秦源黑陶 宜兴紫砂 蜚声中外的德化瓷器 定陶 龙山黑陶 建水陶 景德镇瓷器 广彩 邢窑白瓷 磁州窑陶瓷 成都陶瓷微雕
+                                </p>
+                                <h2>布艺</h2>
+                                <p>
+                                    凤翔布艺北京绢人蓝印花布蜀锦 绣荷包 藏鞋 河北兰印花布 湘西蓝印花布 自贡扎染 北京绢花 陕西千阳布枕 绳 结 潮 汕 抽 纱 常 熟 花 边 烟 台 花 边 乐清黄杨木雕东阳木雕金漆木雕潮州木雕黄岩翻簧竹刻 根雕 骨木镶嵌 神秘的木马勺脸谱 甘肃民间木偶艺术 竹木制品 四川藤器 北京宫灯 西藏木器 柳 编 竹 编 扇
+                                </p>
+                                <h2 id="cixiu">刺绣</h2>
+                                <img class="inner-img" src="./img/mjgy6.jpg" alt="">
+                                <p>
+                                    宝鸡绣品 汴绣 吴旗刺绣京绣 金银彩绣 山西民间刺绣 广绣苏绣湘绣蜀绣 粤绣 宁夏刺绣 绣花鞋 青海民族刺绣 青海刺绣香包 青海荷包 绣球 松江顾绣 庆阳香包洛川毛麻绣 青海堆绣 潮绣
+                                </p>
+                                <h2>泥塑</h2>
+                                <p>
+                                    天津泥塑 河南泥塑 淮阳泥狗 白沟泥塑 宁夏彩塑 凤翔彩绘泥塑 西藏泥塑 高密泥塑 玉田泥塑
+                                </p>
+                                <h2>吴川飘色</h2>
+                                <p>
+                                    吴川飘色艺术是广东省吴川市的汉族传统文化活动。由若干人推着一座色板，色板上装饰着固定姿势的人物。人物只靠一根看不见的色梗支撑着，在高可逾人的空中手舞足蹈，飘然欲飞故而叫飘色。属于社火表演艺术形式之一。
+                                </p>
+                                <p>
+                                    飘色的人物形象普遍是按戏剧人物的艺术造型设计、打扮的。
+                                </p>
+                                <p>
+                                    其内容有历史故事，或神话传说，或现代题材。
+                                </p>
+                                <p>
+                                    一板飘色往往就象一座流动的小舞台表现着一出精彩的特写镜头。现时飘色一般由2至6岁左右的儿童上板乔装打扮，并由过去的一板一层飘色发展到如今的的一板两层或三层飘色。
+                                </p>
+                                <p>
+                                    造型艺术已由过去的单一的木工铁工技巧发展到现代已集电影、戏剧、魔术、杂技等技艺之大成的综合性的空飘造型。人们通过观看五花八门的飘色，将得到一种无法形容的艺术享受。
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

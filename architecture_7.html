@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="architecture.html" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="architecture.html">宫廷府邸建筑</a></li>
+                            <li><a href="architecture_2.html">防御守卫建筑</a></li>
+                            <li><a href="architecture_3.html">纪念性和点缀性建筑</a></li>
+                            <li><a href="architecture_4.html">陵墓建筑</a></li>
+                            <li><a href="architecture_5.html">园囿建筑</a></li>
+                            <li> <a href="architecture_6.html">居民建筑</a></li>
+                            <li> <a href="architecture_7.html" class="active">宗教建筑</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>宗教建筑</h1>
+                                <p>
+                                    北京古建筑中的宗教建筑，有佛教的、喇嘛教的、伊斯兰教的和道教的。 所有这些宗教建筑由于其不同的教义和使用要求，而表现为不同的总体布局和建筑式样。
+                                </p>
+
+                                <h2>总体分类</h2>
+                                <h3>佛教建筑</h3>
+                                <hr class="hr-add">
+                                <p>
+                                    <img class="inner-img" src="./img/jz7_1.jpg" alt="">
+
+                                    <p>
+
+
+                                        中国佛教建筑包括情寺、佛塔和石窟，佛教建筑在初期受到印度影响的同时，根快就开始了中国化的过程。 佛寺北京现存的佛寺有几百座之多，这些都是明、清两代健建的(只有个别的佛塔是较单期的作品)，因此在建筑的总体布局以及个体的做法上，都表现着明、 清时期佛教建筑的特征，明 清佛寺的布局，般都先主 房、配房等组成的网格对称的多进院落形式，在主轴的最前力是山门一整个寺院的入口， 山门内左 右两侧分设钟、鼓楼，中央正对山门的是天王殿，常做成三间穿堂形式的股堂，穿过天王殿， 进入第， 二个院落，座落在正中主轴上的是正限，常名为“大雄宝殿”
+                                        正般对于整个佛寺建筑群体是中心建筑 物，它不论在建筑体积和质量，都在其他单体建筑之上。正股左右配殿或作二层楼阁形式，正殿后 进院落，常建筑二层“藏经楼”，另外，多在主轴院落两侧布置僧房、禅堂、斋堂等僧人居住的房屋， 北京的大型佛寺，如西四牌楼的广济寺等都属于这种类型， 小型的寺庙，一 般只有一进院落 进山门迎面就是大殿， 两厢为僧房。 佛寺建筑群组中常布置一系列附属建筑，如山门前的牌坊、狮子雕刻、塔、幢、碑等， 北京现存的佛塔都是砖石建造的。著名的有广安门外辽代建造的天宁寺塔(斗棋密檐型)
+                                        :阜成 门内元代建造的妙应寺白塔(屠坡型) ;阜成门明代修建的慈寿寺塔(斗拱密檐型) ;大正觉寺金刚宝座塔(印度金刚宝座式):卧佛寺在西山余脉聚宝山(寿安山)南麓，寺首创于唐贞观年间(627- 649年)原名兜率寺，或名寿安寺。清雍正十二年(1734年)改称十方普觉寺。因寺内有元至顺元年二年(1330 -1331年)铸造的一-驱释迦牟尼涅架铜像，所以一般叫卧佛寺， 碧云寺在西山东麓，各组殿堂成阶梯状层层上升:始建于元代至顺年间，初名碧云庵，明代正德年间(十六世纪初)扩建:清乾隆十三年(1748年)又在原有基础上大规模扩建。
+                                        天宁寺塔在广安门外，是我国现存的密檐式砖塔中比较典型的一一座。此塔随代已有，现存的这座塔是辽代建的。
+
+                                    </p>
+
+
+                                    <h3>喇嘛寺</h3>
+                                    <hr class="hr-add">
+
+                                    <img class="inner-img" src="./img/jz7_2.jpg" alt="">
+                                    <p>
+                                        喇嘛寺在我国信奉喇嘛教的是禁、藏两个兄弟民族，所以喇嘛寺的建筑也因宗教内容的特点和民族的特点而和佛寺有所不同。 北京的喇嘛教建筑是从元代开始出现的。 喇嘛教建筑般有两种形式，一种是和佛寺 相近的宫室式木建筑:另种是属于 调房式的砧石建筑，北京的雍和宫和东、西黄寺都属于前者，只有颐和园后山的一组喇嘛寺是碉房式的。 木建筑的喇嘛寺仍旧采用了四合院式布局，寺庙前半部的山门、天王殿、大殿，都和佛寺差不多，但大殿以后的部分常有高大而雄伟的建筑，在布局上也有所变化:例如雍和宫的后部采用三股并列的制度，用复道将高大的万福阁和两侧的水康阁、延宁阁连接起来，气势十分壮丽。喇嘛教的塔不同于佛塔。
+                                        它是由印度的屠坡演化 而来的，中国的喇嘛塔也有用为僧倡坟墓的，但建筑在寺庙中的喇嘛塔，却和佛塔的作用 相同。
+
+                                    </p>
+
+
+                                    <h3>清真寺</h3>
+                                    <hr class="hr-add">
+                                    <img class="inner-img" src="./img/jz7_3.jpg" alt="">
+                                    <p>清真寺 我国的回族、维吾尔族等兄弟民族都是信奉伊斯兰教的，因而我国分布的清真寺很多。</p>
+                                    <p>　　伊斯兰教是从唐代开始传入中国的。最初建造的伊斯兰教寺庙完全是阿拉伯式的建筑。以后逐渐采用了中国传统木建筑形式，但在建筑制度、总体布局和内部装饰上仍然保持了伊斯兰教的特点。</p>
+                                    <p>　北京的伊斯兰教寺庙共有80余座，其中历史最悠久，规模最大的在广安门牛街。</p>
+                                    <p>　牛街清真寺的建筑在结构和材料上既继承了中国建筑传统，又保持了本民族的特有形式，在平面布置和总体布置上也满足宗教活动的要求，是中国的伊斯兰教寺庙建筑的一个典型例子。</p>
+                                    <h3> 道教</h3>
+                                    <hr class="hr-add">
+                                    <p>
+
+                                        <img class="inner-img" src="./img/jz7_4.jpg" alt="">
+                                        <p>
+                                            道观</p>
+                                        <p> 道教是在我国本土上诞生的，也是我国特有的宗教。</p>
+
+                                        <p> 北京的道教建筑，根据文献记载，远在唐代就有了，但真正的大规模地修建道观是从元代开始的。</p>
+
+                                        <p> 白云观，在西便门外，是北京规模最大的道观；现存的白云观是清代重建的，体现了清代道观的规制。</p>
+                                        <p> 道教四大名观：北京白云观、山西永乐宫、南阳玄妙观、陕西楼台观</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

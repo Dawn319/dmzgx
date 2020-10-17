@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="inner1.html">诸子百家</a></li>
+                            <li><a href="inner1-2.html">琴棋书画</a></li>
+                            <li><a href="inner1-3.html" class="active">武术</a></li>
+                            <li><a href="inner1-4.html">民间工艺</a></li>
+                            <li> <a href="inner1-5.html">四大发明</a></li>
+                            <li><a href="inner1-6.html">武当山</a></li>
+                            <li><a href="inner1-6.html">国家博物馆</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>武术</h1>
+                                <img class="inner-img" src="./img/ws3.jpg" alt="">
+                                <p>武术是古代军事战争一种传承的技术。习武可以强身健体，亦可以防御敌人进攻。习武之人以“制止侵袭”为技术导向、引领修习者进入认识人与自然、社会客观规律的传统教化（武化）方式，是人类物质文明的导向和保障，是当代传统武学艺术的一种展示。 武术，拥有消停战事、维护和平的实力。作为中华民族炎黄子孙的生存技能，中国传统武术伴随着中国历史与文明发展，走过了几千年的风雨历程，成为维系这个民族生存和发展的魂、和承载中华儿女基因构成的魄，止戈为武。武，是拥有维护自身安全和权益的实力。我们修习武术，是让我们从身到心、由魂而魄得到提升而充满安全感，精壮神足，具有安然自胜的实力。这是我族历代沉淀而成、安魂守魄的法宝。
+                                    2020年1月8日，武术被列入第四届青年奥林匹克运动会正式比赛项目。
+                                </p>
+                                <h2>武术简介</h2>
+                                <p>中华武术因儒法防民的关系，形成“传统军械武术”“传统徒手武术”两大类。传统军武是指刀剑（击剑）、摔跤（柔道）、弓弩（射箭）、石锁（举重）、马术（赛马）等武举考试项目。传统军械武术跟传统徒手武术无关，跟现代奥运会相接近。而现在被称为“传统武术”的各种徒手武术流派在古代属于五花八门的“江湖大师”和农民斗术。空手道的前身“首里手”和“那霸手”就是琉球农民对付日本人的斗殴技术。然而传统和现代未必互斥。日本的空手道、韩国的跆拳道、泰国的泰拳，为了文化输出从而引入现代标准机制，现代化较为成功而且平稳。“传统空手道”各流派有JKA联赛，点数制，类似80～90年代的老散打。极真会改成了更暴力的KO制，类似泰式散打。这几个项目之间一直有选手互相转会的现象，主要的转会门槛在适应规则的过程和身体素质，技术则共通一大半。
+
+                                </p>
+                                <h2>词语解释</h2>
+                                <img class="inner-img" src="./img/ws1.jpg" alt="">
+                                <p>
+                                    武，止戈为武；术，思通造化、随通而行为术。 武术，奔跑（止通假趾，意思为奔跑）战斗（戈）的技术。是古代军事战争一种传承的技术。 从语源来看，“武术”一词最早见于南朝人颜延之的《皇太子释奠会作》，其日：“大人长物，继天接圣；时屯必亨，运蒙则正；偃闭武术，阐扬文令；庶士倾风，万流仰镜。”文中的武术，即指军事。 武术就是军事技术，也就是古代战争技术。所以兵器被称为武器，军事被称为武事，军备也被称为武备。所以，武，本意就是拿起武器奔跑，去战争，去杀伐。所以武术即为杀伐之术。也为战争之术。
+                                </p>
+                                <h2>相关事件</h2>
+                                <h3>申请奥运项目</h3>
+                                <p>
+                                    2015年6月22日，在日本东京都召开的“2020年东京奥运会东道主城市提议候补比赛项目选择大会”——组委会工作会议上，8个项目被选为了2020年东京奥运会的候补项目，这其中就包括武术。
+                                </p>
+                                <p>
+                                    2015年9月28日，“2020年东京奥运会”组委会宣布了他们将向国际奥委会提交的新增项目提名名单，武术未在5个被提名的项目之中，这意味着武术项目将无缘2020年东京奥运会。
+                                </p>
+                                <h3>助力武术入奥</h3>
+                                <p>
+                                    第一届世界杯武术套路比赛拉开了全球助力武术入奥的序幕
+                                </p>
+                                <p>
+                                    2019年9月，国务院颁布了《体育强国建设纲要》，印发了《武术产业发展规划》，明确支持武术国际化，支持推动武术项目早日进入奥运会
+                                </p>
+                                <h3>成为青奥项目</h3>
+                                <p>
+                                    2020年1月8日，在瑞士洛桑举行的国际奥委会执委会会议通过了武术列入第四届青年奥林匹克运动会正式比赛项目的申请，这是武术首次成为奥林匹克系列运动会正式比赛项目。
+                                </p>
+                                <h2>武术来源作用</h2>
+                                <img class="inner-img" src="./img/ws1.jpg" alt="">
+                                <h3>个人自保</h3>
+                                <p>
+                                    原始社会：强弱争斗，一方动戈，继而出现武。武，止戈为武，消停战事而来。
+                                </p>
+                                <p>
+                                    武术，消停战事的技术。中国武术、中国传统武术，通过武化流传，以“制止侵袭”为技术导向、引领修习者进入认识人与自然、社会客观规律的传统教化方式。是人类物质文明的导向和保障。
+                                </p>
+                                <h3>安国强民课程</h3>
+                                <p>
+                                    国家、社群：楚庄王曰：夫文止戈为武。又曰：夫武，禁暴戢兵保大定功，安民和财者也。——《左氏春秋·宣公十二年》。
+                                </p>
+                                <p>
+                                    楚庄王，楚穆王之子，春秋时期楚国国君，公元前613—公元前591年在位，春秋五霸之一。春秋末期，孔子曾到访楚国，称楚庄王的政治思想与儒家的“仁”的思想相符。在楚庄王之前，楚国一直被排除在华夏文化之外；自楚庄王始、使楚国强大，为华夏文化的传播、和民族精神的形成，发挥巨大作用，威名远扬。
+                                </p>
+                                <h3>关于武功</h3>
+                                <p>
+                                    武功，在个人，是制止侵害，维护自身安全和权、益的功力；在国家，是戢兵保大而定功。
+                                </p>
+                                <p>
+                                </p>
+                                <h3>武术竞技来源</h3>
+                                <p>
+                                    二战后，全球用“竞技体育”方式，来消除二战余下的戾气。新中国为顺应国际形势，以全国之力全民发展竞技体育，导致中国武术被卷入体育范畴，以比赛、竞技等形式进行“发展”，至今。但是，以奥林匹克精神所推动的竞技体育，其使用的规则，与中国传统武术“止戈为武”的核心思想迥然不同，两者之间难以拟合、厘定，导致当今中国武术形成出以表演为主、以竞技为主和以民间传统功夫为主的不同概念武术并存、的局面。
+                                </p>
+                                <p>
+                                    竞技，是以体育为基础，以展示体育成果为目标的社会活动形式。体育，来自于日文中的“体育”一词，出自于19世纪70年代，在中国最早见于20世纪初的清末，由在湖北开办幼稚园、对幼儿进行全面”保全身体之健旺“的教育方针而来。竞技体育是在西方现代解剖学主导的框架下解释的运动形式，它不能涵盖中国传统武术所包涵对修习者除身体外，在精、气、神等综合方面的提升。中国传统武术并无单一的体育形式，中国也没有传统体育（在2009年7月9日日，由国家体育总局以体育概念为基础创立的“传统体育”新概念，没法提供任何传统文化引证、及支持。）；
+                                    在2015年3月19日，国家体育总局武术运动管理中心陈国荣副主任，在对中国武术的历史和社会地位等问题、进行了全面阐述后，重新将武术与体育的关系复原定义：中国武术不仅涵盖了西方体育的多种运动形式，而且，还拥有独特的东方传统运动形式、深邃的思想和厚重的文化。从这个角度来说，中国武术不是隶属于体育，而是体育的上位概念。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

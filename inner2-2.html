@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="inner2.html">故宫</a></li>
+                            <li><a href="inner2-2.html" class="active">神农架</a></li>
+                            <li><a href="inner2-3.html">九寨沟</a></li>
+                            <li><a href="inner2-4.html">云南大理</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>神农架</h1>
+                                <p>神农架林区，地处湖北省西北部，1970年经国务院批准建制，是中国唯一以“林区”命名的行政区划，由湖北省直辖。
+                                </p>
+                                <p>
+                                    神农架林区地处武当山，长江三峡组成的旅游带上，东与湖北省襄阳市保康县接壤，西与重庆市巫山县毗邻，南依兴山、巴东而濒长江三峡，北倚十堰市房县、竹山县，远眺武当山风景区。地跨东经109°56′～110°58′，北纬31°15′～31°75′，全区总面积3253平方公里，辖6镇2乡和1个国家级自然保护区、1个国有森工企业林业管理局、1个国家湿地公园，林地占85%以上。2014年，全区户籍人口为79248人。2018年，全区实现地区生产总值28亿元，增长10.1%。完成地方一般公共财政预算收入5.1亿元，增长10.1%。
+                                    2018年8月7日，湖北省政府批准神农架林区退出贫困县。 2018年9月，荣获“中国天然氧吧”称号。 2019年3月，被列为第一批革命文物保护利用片区分县名单。
+                                </p>
+                                <p>
+                                    神农架是中国首个获得联合国教科文组织人与生物圈自然保护区、世界地质公园、世界遗产三大保护制度共同录入的“三冠王”名录遗产地。 2016年7月17日，神农架被列入世界遗产名录 ，成为湖北省第1处、中国第11处世界自然遗产。
+                                </p>
+                                <h2>建制沿革</h2>
+                                <img class="inner-img" src="./img/snj1.jpg" alt="">
+                                <p>
+                                    神农架因华夏始祖炎帝神农氏在此架木为梯，采尝百草，救民疾夭，教民稼穑而得名。
+                                </p>
+                                <p>
+                                    1970年5月，国务院批准将房县、兴山、巴东的24个公社和2个药材场、1个农场划为神农架林区的行政区划，是中国唯一以“林区”命名的省辖行政区。
+                                </p>
+                                <p>
+                                    1971年划归宜昌地区革命委员会管辖。
+                                </p>
+                                <p>
+                                    1972年3月复归省辖。
+                                </p>
+                                <p>
+                                    1976年5月划归郧阳地区革命委员会管辖。
+                                </p>
+                                <p>
+                                    1983年8月又复归湖北省辖。
+                                </p>
+                                <p>
+                                    1980年11月，省政府批准成立神农架林区人民政府，撤销神农架林区革命委员会。
+                                </p>
+                                <p>
+                                    1985年巴东代管的下谷坪、石磨、板桥河3乡移交神农架林区。
+                                </p>
+                                <p>
+                                    2009年，撤销新华乡，设立新华镇，以原新华乡的行政区域为新华镇的行政区域，镇政府驻樟树坪。2009年末，神农架林区总面积3215.83平方千米，总人口80321人。辖5个镇、3个乡：松柏镇、阳日镇、红坪镇、木鱼镇、新华镇、宋洛乡、九湖乡、下谷平土家族乡，共有68个行政村、9个居委会，328个村民小组。
+                                </p>
+                                <img class="inner-img" src="./img/snj2.jpg" alt="">
+                                <h2>行政区划</h2>
+                                <p>
+                                    神农架林区共辖8个乡级行政区，包括5个镇、2个乡、1个民族乡，分别是松柏镇、阳日镇、木鱼镇、红坪镇、新华镇、宋洛乡、九湖乡、下谷坪土家族乡。 神农架林区人民政府驻松柏镇常青路18号。
+                                </p>
+                                <h2>地理环境</h2>
+                                <h3>位置境域</h3>
+                                <p>
+                                    神农架林区（东经109°56′～110°58′，北纬31°15′～31°75′），位于鄂西北边陲，东接保康，西邻重庆巫山，南依兴山、巴东而濒三峡，北倚房县、竹山且近武当。
+                                </p>
+                                <h3>地貌形成</h3>
+                                <p>
+                                    神农架林区从印支运动末至燕山运动初，发生了强烈的褶皱和大面积的掀斜，奠定了区内的地貌骨架。第四纪气候的冷暖变化，在部分地段残留了冰川地貌，致使区内地貌复杂多样。神农架山脉近东西向横垣于神农架林区西南部，以神农顶最高，高程为3105.4米，也是华中地区最高点；林区最低点为下谷坪乡的石柱河，高程为398米，相对高差2707.4米。根据区内地貌形态特征和成因类型，可分为构造溶蚀地貌、溶蚀侵蚀地貌、剥蚀侵蚀地貌、堆积地貌等四种类型的地貌单元。
+                                </p>
+                                <h3>气候特征</h3>
+                                <p>
+                                    神农架属于北亚热带季风气候区，为亚热带气候向温带气候过渡区域。夏季湿润多雨，冬季温和少雨。全年辐射103.7千卡/平方米，全年日照时数1858.3 小时，日照时数及总辐射量随着海拔的增高而减少，年均气温无霜期因海拔不同相差很大。年降水量在800—2500毫米之间，降水量随海拔的增高而增加。春夏之交常有冰霜发生，一般从9月底至次年4月底为冰霜期。区内平均年蒸发量为500—800毫米，干旱指数0.50—0.53。全年80%的时间盛行东南风。
+                                </p>
+                                <h2>外朝分布</h2>
+                                <img class="inner-img" src="./img/snj6.png" alt="">
+                                <h3>土地资源</h3>
+                                <p>神农架林区的耕地7046.86公顷，占湖北省面积2.2%；园地674.06公顷，占湖北省面积0.2%；林地295260.59公顷，占湖北省面积90.8%；牧草地661.76公顷，占湖北省面积0.21%；其它农用地1241.47公顷，占湖北省面积0.3%；居民点及工矿用地1256.3公顷，占湖北省面积0.39%；交通运输用地396.89公顷，占湖北省面积0.12%；水域用地1119.18公顷，占湖北省面积0.34%；未利用地15014.2公顷，占湖北省面积4.67%。全区人均耕地面积1.33亩。
+                                </p>
+                                <h3>矿藏资源</h3>
+                                <p>
+                                    神农架处于扬子淮地台上扬子坪之鄂中断区内，为一断穹构造。地层出露以前寒武系为主，由轻微变质岩种海相碳酸盐岩、碎屑岩组成，兼有辉绿岩、辉长岩和多项火山喷发岩分布，因此，神农架成矿条件优越，有较丰富的矿藏。
+                                </p>
+                                <p>
+                                    神农架已探明的矿种有磷矿、铁矿、镁矿、铅锌矿、硅矿、铜矿、建筑石材等15种（不含砂石、粘土），共有各类矿床（点）53处，其中主要矿种有磷矿、铁矿、铜矿、镁矿、铅锌矿、硅矿等。现已探明磷矿储量为15000万吨，铁矿储量为2029.4万吨，已查明铅锌矿金属量为50多万吨，铜矿储量为117.6万吨，镁矿储量为37.1万吨，硅矿储量为850万吨。
+                                </p>
+                                <img class="inner-img" src="./img/snj3.jpg" alt="">
+                                <h3>水利资源</h3>
+                                <p>
+                                    神农架是湖北长江和汉江的分水岭。神农架林区共有四大水系，分为香溪河、沿渡河、南河、堵河四大流域，境内有大小河流317条，其中：超过1000平方公里的河流1条。神农架的水能资源十分丰富，年平均降水总量为36.44亿立方米，多年平均径流总量为22.004亿立方米，水资源总量为22—25亿立方米，人均占有水资源13591立方米。
+                                </p>
+                                <p>
+                                    神农架林区河谷具明显幼年期特征，河谷陡险，横断面多呈“v”形，坡降大，水流急，受特定的地理条件制约，神农架水资源除少量的农业灌溉用水、工业用水和社会生活用水外，主要是在水能资源的开发利用上。根据勘测表明，神农架水能资源理论蕴藏量为57万千瓦，可开发利用为35 万千瓦。
+                                </p>
+                                <h3>生物资源</h3>
+                                <p>
+                                    神农架已初步查明有高等维管束植物199科872属3183种，真菌、地衣共927种；其中属于国家重点保护植物有76种，如珙桐、光叶珙桐，连香树、水青树、香果树等；属于神农架鄂西特有植物42种，如汉白杨、红坪杏等。药用植物超过1800多种，以“天然药园”驰名中外。神农架现有脊椎动物493种，占湖北省脊椎动物总种数的57.5%。其中哺乳纲7目22科75种，鸟纲16目48科308种，爬行纲2目8科27属40种，两栖纲2目7科23种，鱼纲4目10科32属47种，分别占湖北省同类总数的61.9%、71.5%、68.9%、50.0%、23.4%。神农架蕴藏着丰富的昆虫资源，计有28目157科4143种。有国家重点保护野生动物73种。此外，还先后发现了30多种白化动物，如白林麝、白鬣羚、白蛇、白熊等。白化动物多也是区内动物资源的一个鲜明特点。（数据截至2013年）
+                                </p>
+                                <p>
+                                    按照中国动物地理区划，神农架属东洋界、华中区、西部山地高原亚区。通过对75种兽类、236种鸟类和63种两栖爬行类的成份分析，东洋种占优势，占总种数的64.97%。广布种其次，占总种数的17.65%。古北界种占总种数的17.38%。可发现南方和北方物种混杂现象，表现出过渡性特征。
+                                </p>
+                                <img class="inner-img" src="./img/snj4.jpg" alt="">
+                                <p>
+                                    神农架是金丝猴主要分区。金丝猴是中国特有的珍稀动物，分布于四川、陕西、甘肃的部分地区和湖北省的神农架。20世纪60年代前，神农架基本处于封闭状态，为人迹罕至的原始森林。1980年才有神农架存在金丝猴的报道。主要栖息在海拔1700—3100 米之间的针叶林和针阔叶混交林中，集中分布在保护区西片的东部区域，现有金丝猴种群1200余只。
+                                </p>
+                                <h2>旅游</h2>
+                                <p>
+                                    神农架生态旅游区雄踞秦巴山脉东端，与武陵山脉咫尺共扼长江三峡，面积45.4平方公里。这里有源自地球上最完整的前寒武纪地层，燕山、喜马拉雅冰川运动造就的地质奇观，这里形成了以“华中屋脊”为中心，集自然奇观、科考探秘、天人和谐于一体的原生态旅游区。
+                                </p>
+                                <h3>天燕原始生态旅游区</h3>
+                                <p>
+                                    天燕原始生态旅游区位于神农架西北部，总面积约926.24平方公里。是以原始森林风光为背景，以神农氏传说和纯朴的山林文化为内涵，集奇树、奇花、奇洞、奇峰与山民奇风异俗为一体，以反映原始悠古、猎奇探秘为主题的原始生态旅游区。景区内林海茫茫，物华地灵，美不胜收，尤以“雄、秀、幽、野”为特色而生美感。
+                                </p>
+                                <p>
+                                    由于位于中国南北地理的交汇地带，这里汇集了南北不同自然地带的动植物资源，区内自然植被可分为针叶林、阔叶林、竹林、灌丛、山地草丛、草甸、沼泽等系列植被类型，丰富的动植物资源极具可观性，加之空气清新，环境静谧，是开展绿色旅游的良好场所。主要景点有燕子洞、燕天飞渡、会仙桥、燕子垭、薛刚寨、天门垭、刘享寨、山宝洞、紫竹河原始森林、云海佛光、红坪画廊、百草坪、塔坪山林田园风光及民俗风情等。
+                                </p>
+                                <img class="inner-img" src="./img/snj7.png" alt="">
+                                <h3>
+                                    神农架国家森林公园
+                                </h3>
+                                <p>
+                                    神农架国家森林公园位于湖北省西北部，由房县、兴山、巴东三县边缘地带组成，面积3250平方公里，林地占85%以上，森林覆盖率69.5%，区内居住着汉、土家、回等民族，人口近8万。神农架最高峰神农顶海拔3105.4米，最低处海拔398米，平方海拔1700米，3000米以上山峰有6座，被誉为“华中屋脊”。
+                                </p>
+                                <h3>野人之谜</h3>
+                                <p>
+                                    中国科学院从1977年开始对神农架人形动物进行科考和研究，30年来也接到过上百宗曾经见过“野人”的各界人士的反映，同时也收集到不少有关人形动物活动的证据，但是30年来始终都没有过与人形动物的正面接触。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

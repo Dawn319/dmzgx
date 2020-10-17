@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="architecture.html" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="architecture.html">宫廷府邸建筑</a></li>
+                            <li><a href="architecture_2.html">防御守卫建筑</a></li>
+                            <li><a href="architecture_3.html">纪念性和点缀性建筑</a></li>
+                            <li><a href="architecture_4.html" class="active">陵墓建筑</a></li>
+                            <li><a href="architecture_5.html">园囿建筑</a></li>
+                            <li> <a href="architecture_6.html">居民建筑</a></li>
+                            <li> <a href="architecture_7.html">宗教建筑</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>陵墓建筑</h1>
+                                <img class="inner-img" src="./img/jz4_1.jpg" alt="">
+
+                                <p>
+                                    陵墓建筑是中国古建筑中最宏伟、最庞大的建筑群之一。这些陵墓建筑，一般都是利用自然地形，靠山而建；也有少数建造在平原上。中国陵园的布局大都是四周筑墙，四面开门，四角建造角楼。
+                                </p>
+                                <p>
+                                    陵墓建筑是中国古代建筑的重要组成部分，中国古人基于人死而灵魂不灭的观念，普遍重视丧葬，因此，无论任何阶层对陵墓皆精心构筑。在漫长的历史进程中，中国陵墓建筑得到了长足的发展，产生了举世罕见的、庞大的古代帝、后墓群；且在历史演变过程中，陵墓建筑逐步与绘画、书法、雕刻等诸艺术门派融为一体，成为反映多种艺术成就的综合体。
+                                </p>
+
+                                <h2>建筑结构</h2>
+                                <P>
+                                    陵前建有甬道，甬道两侧有门阙石人、石兽雕像，陵园内松柏苍翠、树木森森，给人肃穆、宁静之感
+                                </p>
+                                <p>
+                                    从新石器时代起，墓葬多为长方形或方形坑墓，有的距地表深达10余米，并有大量奴隶殉葬和车、马等随葬。到了后来，帝王的陵墓－地下寝宫装饰得越来越华丽，随葬各种奇珍异宝，其建筑规模对后世陵墓影响很大。唐代是中国陵墓建筑史上一个高潮，有的陵墓因山而筑，气势雄伟。
+                                </p>
+                                <p>
+                                    由于帝王拜谒陵墓的需要，在陵园内设立了祭享殿堂，称为上宫，陵区内置陪葬墓，安葬诸王、公主、嫔妃，乃至宰相、功臣、大将、命官。陵山前排列石人、石兽、阙楼等。
+                                </p>
+                                <p>
+                                    明代是中国陵墓建筑史上另一高潮，明代除了太祖孝陵在江苏省南京外，其余各帝陵在北京昌平县天寿山，总称明十三陵。各陵都背山而建，在整个陵区前都设置总神道，建石象生、碑亭、大红门、石牌坊等，造成肃穆庄严的气氛。其中定陵已经考古发掘，地下寝宫分前殿、中殿、后殿和左右二配殿，全部用石材构筑。清代陵墓，前期的永陵在辽宁新宾，福陵、昭陵在沈阳，其余陵墓建于河北遵化和易县，分别称为清东陵和清西陵。建筑布局和形制因袭明陵，建筑的雕饰风格更为华丽。
+                                </p>
+                                <h2 id="bmy">历代皇陵</h2>
+                                <p>
+                                    据文献记载，秦始皇即位后，便在疆山大规模修建陵墓，至他死时已修建36年: 汉武帝的陵墓修建了半个世纪之久:明神宗(朱翊钧) 10岁 做皇帝，22岁就忙着为自己修建坟墓。
+                                </p>
+                                <p>
+                                    西安附近是我国皇帝陵墓较为集中的地方，除了强山秦始皇墓外，还有西汉11个皇帝的陵墓，唐代18个皇帝的陵墓。其中汉武帝(刘彻)的茂陵是11个西汉皇陵中规模最大的一座，埋藏的宝物也是最多的。茂陵还有5个陪葬墓。据文献记载，当时茂陵设置了陵令、园长等官职管理陵园，仅浇树酒扫的人就有5千多。
+                                </p>
+                                <p>
+                                    昭陵是唐太宗（李世民）的陵墓，周围30公里，园内还有17座功臣贵戚的陪葬墓。昭陵地上地下都是珍贵的文物。据记载，墓内“闲丽不异人间”，说明昭陵地官的豪华和富丽。
+                                </p>
+                                <p>
+                                    北宋皇陵在河南省巩县境内，整个陵区南北15公里，东西10公里。北宋9个皇帝有7个皇帝葬埋在这里。其中最大的陵墓是宋太祖赵匡胤的永昌陵。 我国皇帝的陵墓中明清两代的皇陵最为完整。明朝皇帝的陵墓主要在北京的昌平县天寿山下，即十三陵。明十三陵中规模最大最宏伟的是长陵（明成祖朱棣）和定陵（明神宗朱翊钧）。
+                                </p>
+                                <img class="inner-img" src="./img/jz4_2.jpg" alt="">
+                                <p>
+                                    定陵已于1956年发掘。定陵地宫距地面27米，总面积1195平方米，由前、中、后及左右5个殿联成，全部用砌石卷拱。地宫除放置皇帝神宗的棺木外，还有他的两个皇后的棺木。地官石拱结构坚实，四周排水设备良好，很少积水，石拱无一块石头塌陷，充分说明我国建造地下建筑的高超技术。
+                                </p>
+                                <p>
+                                    清陵共分三处：辽宁省有老陵三座（永陵、福陵、昭陵）、河北省遵化县的马兰峪有清东陵、河北省易县境内有清西陵。
+                                </p>
+                                <p>
+                                    清东陵是我国现存陵墓建筑中规模最宏大、建筑体系最完整的皇家陵寝。这里埋葬着顺治（孝陵）、康熙（景陵）、乾隆（裕陵）、咸丰（定陵）、同治（慧陵）5个皇帝，14个皇后，136个嫔妃，共15个陵墓，占地2500平方公里。东陵宫殿及牌楼217座，建筑面积要比北京故宫大几十万平方米。陵区的北部是昌瑞山的主峰，主峰脚下是孝陵，其它诸陵分列两侧。正对孝陵是一条12米宽，6公里长的神道贯穿南北，两侧排列着石人、石兽等。
+                                </p>
+                                清东陵地上的建筑以定东陵（慈禧）和裕陵（乾隆）最为考究。定东陵和裕陵地宫全用汉白玉建造，处处是艺术高超的石雕，龙凤呈祥，彩云飞舞。地宫室内墙壁除石雕之外，全都贴金，金碧辉煌、光彩夺目。仅贴金一项，就消耗黄金4590两。建筑精美壮观，糜费空前。 清西陵位于河北省易县永宁山下。这里埋葬着雍正、嘉庆、道光、光绪四个皇帝及其后、妃等。陵区占地约800平方公里，建筑面积50万平方米，比清东陵规模小得多。
+                                <p>
+                                    陵园是我国古建筑中最宏伟、最庞大的建筑群，陵园内松柏苍翠、树木森森，已成为今天寻古探奇的旅游胜地。我国陵园建筑对旅游者，尤其是对外国旅游者极有吸引力。每年夏天，仅到东陵游览的人就高达数万人。
+                                </p>
+
+                                <h2>典型陵墓</h2>
+                                <h3>秦始皇陵</h3>
+                                <hr class="hr-add">
+                                <p>
+                                    位于陕西省西安市骊山北麓的秦始皇陵是中国最著名的陵墓，建于2000多年前。被誉为“世界第八大奇迹”的秦始皇兵马俑就是守卫这座陵墓的“部队”。秦始皇兵马俑气势恢弘、雕塑和制作工艺高超，于1987年被列入《世界遗产名录》。世界遗产委员会曾这样评价：那些环绕在秦始皇陵墓周围的著名陶俑形态各异，连同他们的战马、战车和武器，都是现实主义的完美杰作，同时也保留了极高的历史价值。
+                                </p>
+                                <p>
+                                    陕西西安附近是中国帝王陵墓较为集中的地方，除了秦始皇陵外，还有西汉11个皇帝的陵墓，唐代18个皇帝的陵墓。其中汉武帝刘彻的茂陵是西汉皇陵中规模最大的一座，埋藏的宝物也最多；昭陵是唐太宗李世民的陵墓，陵园面积极大，园内还有17座功臣贵戚的陪葬墓，昭陵地上地下都是珍贵的文物，最负盛名的是唐代雕刻精品“六骏图”。
+                                </p>
+
+                                <h3>明清皇陵</h3>
+                                <hr class="hr-add">
+                                <p>
+                                    明清两代皇陵是中国帝王的陵墓中保存最为完整的。明朝皇帝的陵墓主要在北京的昌平，即十三陵，为明代定都北京后13位皇帝的陵墓群，位于北京市昌平县城北天寿山下一个三面环山、向南开口的小盆地内。小盆地内的山坡上错落有致地分布着这些帝王的陵墓，占地面积达40平方公里。陵区内共埋葬着13位帝王、23位皇后和众多的妃子、皇子、公主及丛葬的宫女等。明清两代皇陵是中国帝王的陵墓中保存最为完整的。
+                                </p>
+                                <h4>十三陵</h4>
+                                <p>
+                                    明朝皇帝的陵墓主要在北京的昌平，即十三陵，为明代定都北京后13位皇帝的陵墓群
+                                </p>
+                                <p>
+                                    明十三陵规模宏伟壮丽，景色苍秀，气势雄阔，是国内现存最集中、最完整的陵园建筑群。其中规模最宏伟的是长陵（明成祖朱棣）和定陵（明神宗朱翊钧）。经挖掘发现，定陵地宫的石拱结构坚实，四周排水设备良好，积水极少，石拱无一塌陷，这充分展示了中国古人建造地下建筑的高超技术。
+                                </p>
+                                <h4>清东陵</h4>
+                                <p>
+                                    中国现存陵墓建筑中规模最宏大、建筑体系最完整的皇家陵寝——清东陵占地78平方公里，其中埋葬着清朝5位皇帝，14位皇后，百余名嫔妃。清东陵内的主要陵墓建筑都精美壮观，极为考究。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="architecture.html" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="architecture.html">宫廷府邸建筑</a></li>
+                            <li><a href="architecture_2.html">防御守卫建筑</a></li>
+                            <li><a href="architecture_3.html">纪念性和点缀性建筑</a></li>
+                            <li><a href="architecture_4.html">陵墓建筑</a></li>
+                            <li><a href="architecture_5.html">园囿建筑</a></li>
+                            <li> <a href="architecture_6.html" class="active">居民建筑</a></li>
+                            <li> <a href="architecture_7.html">宗教建筑</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>居民建筑</h1>
+                                <img class="inner-img" src="./img/jz6_3.jpg" alt="">
+
+                                <p>
+                                    民居建筑是指中国传统的人民居住的房屋建筑。包含了建筑的风格和形式，在不同的历史时期的和不同的地区有不同的变化。中国民居是各地居民自己设计建造的具有一定代表性、富有地方特色的民家住宅。在中国的民居中，最具特点的民居有北京四合院、广东镬耳屋、西北黄土高原的窑洞、安徽的古民居、潮汕下山虎、 [1] 福建和广东等地的土楼、蒙古的蒙古包等。
+                                </p>
+                                <p>
+                                    客家围龙屋与北京的“四合院”、陕西的“窑洞”、广西的“杆栏式”和云南的“一颗印”，合称为我国最具乡土风情的五大传统住宅建筑形式，被中外建筑学界称为中国民居建筑的五大特色之一
+                                </P>
+                                <h2>简介</h2>
+                                <img class="inner-img" src="./img/jz_gongDian2.jpg" alt="">
+                                <P>中国历史悠久，疆域辽阔，自然环境多种多样，社会经济环境不尽相同。在漫长的历史发展过程中，逐步形成了各地不同的民居建筑形式，这种传统的民居建筑深深地打上了地理环境的烙印，生动地反映了人与自然的关系。最有特点的是北京四合院、广东镬耳屋、潮汕下山虎、西北黄土高原的窑洞、安徽的古民居、福建土楼、蒙古的蒙古包、广西的“杆栏式”和云南的“一颗印”。
+                                </p>
+
+
+                                <h2>典型建筑</h2>
+                                <h3>赣派建筑</h3>
+                                <hr class="hr-add">
+                                <p>
+                                    赣派建筑又称赣派民居、江右民居。是汉族江右民系的传统建筑。主要分布在江西一带，布局简洁，朴实素雅，是赣派民居建筑的主要特色。民居以砖木结构为主，有的是以砖砌墙体或土墙作为承重的砖木、土木混合结构。外看，多为长方形平面，用空半砖墙围合，清一色的青砖灰瓦，高峻的马头墙，半掩半露的双披屋顶共同构成了赣派建筑的外观
+                                </p>
+
+                                <h3>四合院建筑</h3>
+                                <hr class="hr-add">
+                                <img class="inner-img" src="./img/jz6_1.jpg" alt="">
+                                <p>
+                                    四合院建筑，是中国古老、传统的文化象征。“四”东西南北四面，“合”是合在一起，形成一个口字形，这就是四合院的基本特征。四合院建筑之雅致，结构之巧，数量之众多，当推北京为最。 北京的四合院，大大小小，星罗棋布，或处于繁华街面，或处于幽静深巷之中；大则占地几亩，小则不过数丈；或独家独户，或数户、十几户合居，形成了一个符合人性心理、保持传统文化、邻里关系融洽的居住环境。 它的布局，是以南北纵轴对称布置和封闭独立的院落为基本特征的。按其规模的大小，有最简单的一进院、二进院或沿着纵轴加多三进院、四进院或五进院。
+                                </p>
+                                <p>
+                                    正式的四合院，一户一宅，平面格局可大可小。房屋主人可以根据土地面积的大小、家中人数的多少来建造，小到可以只有一进，大可以到三进或四进，还可以建成两个四合院宽的带跨院的。小者，房间为13间；一院或二院者，房间为25间到40间。厢房的后墙为院墙，拐角处再砌砖墙。大四合院从外边用墙包围，墙壁高大，不开窗户，以显示其隐秘性。从制式上来说，许多王府和寺庙也是按照四合院的布局进行设计和建造的
+                                </p>
+                                最小的一进院，进了街门直接就是院子，以中轴线贯穿，房屋都是单层，由倒座房、正房、厢房围成院落，其中北房为正房，东西两个方向的房屋为厢房，南房门向北开，故称为“倒座房”。四合院中植花果树木，以供观赏。
+                                <p>
+                                    两进四合院分为前院和后院，后院又叫作内宅。前院由门楼、倒座房组成，连接前后院的一般为垂花门，一些相对朴素的住宅则用月亮门，后院由东西厢房、正房、游廊组成。也有的两进四合院，例如北京茅盾故居，并没有垂花门隔出前院，而是在正房后加后院，建专供女眷居住的后罩房。
+                                </p>
+                                <p>
+                                    完整的四合院为三进院落，第一进院是垂花门之前由倒座房所居的窄院，第二进院是厢房、正房、游廊组成，正房和厢房旁还可加耳房，第三进院为正房后的后罩房，在正房东侧耳房开一道门，连通第二和第三进院。在整个院落中，老人住北房（上房），中间为大客厅（中堂间），长子住东厢，次子住西厢，佣人住倒座房，女儿住后院，互不影响。这其中也有反映“男外女内”的中国传统文化哲学的影响。
+                                </p>
+                                <p>
+                                    四、五进院的组合方式较多，通常为“前堂后寝”式。第一进院与三进院相同，第二进院是对外使用的厅房和东西厢房，之后再设一道垂花门，在厅房和这道垂花门之间形成第三进院，垂花门之后为正房和厢房所在的第四进院，是主院。如果后面还有后罩房，就构成了第五进院。还有的在倒座房北侧再建一排南房，而组成四进或五进院的。
+                                </p>
+                                <p>
+                                    北京四合院最大的进深为两个胡同之间的距离，约77米左右，一些比较奢华的院落甚至还有花园和假山。规格高一些的四合院还设有厕所，这些内设的厕所一般都被安排到西南角，按风水的说法，西南为“五鬼之地”，建厕所可以用秽物将白虎镇住，从实用的角度看，厕所建在西南方适应了西北-东南风向，可防臭味在院内扩散。
+                                </p>
+                                <p></p>
+
+
+                                <h3>陕北窑洞</h3>
+                                <hr class="hr-add">
+                                <img class="inner-img" src="./img/jz6_2.jpg" alt="">
+                                <p>
+                                    陕北，山大沟深，万壑纵横。这里深厚的黄土和丰富的砂石，为建造窑洞提供了得天独厚的自然条件。 陕北建造窑洞，最早应该始于周代，半地穴式。秦汉后发展为全地穴式，就是现在的土窑。明朝中叶，开始用石块做窑面墙。清末民初，当地人仿土窑模式建起了石砌窑洞。陕北窑洞在各地样式略有差别，体现了不同的风格。但就用料而言，大体分四种：土窑 石窑 砖窑 接口窑。土窑是靠山挖的黄土窑洞。石窑 砖窑是在平地上用石块和砖块砌成的窑洞。接口窑是在土窑洞口，再从底到顶用一层石块或砖箍窑面的窑洞。这种窑洞看起来整洁，结实。在陕北，许多农户住的就是这种窑洞。
+                                </p>
+                                <p>
+                                    陕北的窑洞是依山势开凿出来的这样一个拱顶的窑洞。由于黄土本身具有直立不塌的性质，而拱顶的承重能力又比平顶要好，所以窑洞一般都是采取拱顶的方式来保证了它的稳固性。陕北取黄土高原土层厚实、地下水位低的特点，挖窑洞作民居，有冬暖夏凉的优点。
+                                </p>
+                                <p>
+                                    窑洞民居可分为地坑式、沿崖式和土坯式三种。地坑式窑洞在地面挖坑，内三面或四面开凿洞穴居住，有斜坡道出入。沿崖式窑洞是沿山边及沟边一层一层开凿窑洞。土坯拱式窑洞以土坯砌拱后覆土保温。此外还有砖石砌的窑洞式民居。地坑式窑洞也见于黄土层厚的豫西平原地区，如河南巩县的地坑式窑洞，常常是整个村庄和街道建在地坪以下，远远望去，只见村庄的树冠和地面的林木。地坑式窑洞顶上的土地，仍然可以种植庄稼。甘肃东部也有这种地下街道。从西方环境建筑学家的观点看来，这种地坑式窑洞建筑是完美的不破坏自然的文明建筑。
+                                </p>
+                                <p>
+                                    地下窑洞的组合，仍然保持北方传统四合院的格局，有厨房和贮存粮食的仓库、饮水井和渗水井，以及饲养牲畜的棚栏，形成一个舒适的地下庭院。在地段的利用、院落的划分、上下层的交通关系、采光通风和排水都有很巧妙的处理方法。
+                                </p>
+                                <h3>围龙屋建筑</h3>
+                                <hr class="hr-add">
+                                <p>
+                                    围龙屋建筑始建于唐宋，盛行于明清。客家人采用中原汉族建筑工艺中最先进的抬梁式与穿斗式相结合的技艺，选择丘陵或斜坡地段建造。在建筑上以南北子午线为中轴，东西两边对称，前低后高，主次分明，错落有序，布局规整。主体结构为“一进三厅两厢一围”。围龙屋左右两厢俗称横屋，在左右横屋尽头，筑起围墙形的屋，把正屋包围起来，正中一间为“龙厅”，故名“围龙”屋。小的围龙屋一般只有一至二条围龙，大型围龙屋有四至六条围龙。然而梅州的客家围龙屋基本上都不是圆形的，是半圆形的，屋前定有一个呈半圆的水塘，水和屋最后合成为一个圆，这些是其他地方所没有的。
+                                    据历史学家考察,这种民宅建筑与中原贵族大院屋型十分相似，这是有其历史渊源的。客家先民原系中原汉人，因战乱、灾荒等原因辗转南迁赣、粤、闽落籍繁衍。客家先民南迁定居岭南后，不但传播了中原的先进耕作技术，而且建筑民宅保持了原有的传统风格。 [12] 不同的民居建筑包含的文化内涵也不同，比如说客家民居建筑反映了客家人团结互助、敬老尊贤、礼貌文明、知书达理的传统美德。汉族传统四合院形成了家庭院落为中心，街坊邻里为干线，社区地域为平面的社会网络系统。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " style="display: block;" id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="index.html" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="architecture.html" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 侧导航栏 -->
+                <div class="container">
+                    <div class="col l2">
+                        <ul class="nav-2">
+                            <li><a href="architecture.html">宫廷府邸建筑</a></li>
+                            <li><a href="architecture_2.html" class="active">防御守卫建筑</a></li>
+                            <li><a href="architecture_3.html">纪念性和点缀性建筑</a></li>
+                            <li><a href="architecture_4.html">陵墓建筑</a></li>
+                            <li><a href="architecture_5.html">园囿建筑</a></li>
+                            <li> <a href="architecture_6.html">居民建筑</a></li>
+                            <li> <a href="architecture_7.html">宗教建筑</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col l10">
+                        <div class="inner-right">
+                            <div class="inner-right-left">
+                                <h1>防御守卫建筑</h1>
+
+
+                                <h2>长城</h2>
+
+                                <P>
+                                    <img class="inner-img" src="./img/jz2_1.jpg" alt="">
+                                    <p>
+                                        长城（The Great Wall），又称万里长城，是中国古代的军事防御工事，是一道高大、坚固而且连绵不断的长垣，用以限隔敌骑的行动。长城不是一道单纯孤立的城墙，而是以城墙为主体，同大量的城、障、亭、标相结合的防御体系。
+                                    </p>
+                                    <p>
+                                        长城修筑的历史可上溯到西周时期，发生在首都镐京（今陕西西安）的著名典故“烽火戏诸侯”就源于此 [1-6] 。春秋战国时期列国争霸，互相防守，长城修筑进入第一个高潮，但此时修筑的长度都比较短。秦灭六国统一天下后，秦始皇连接和修缮战国长城，始有万里长城之称 [6] 。明朝是最后一个大修长城的朝代，今天人们所看到的长城多是此时修筑。 [7]
+                                    </p>
+                                    <p>
+                                        长城资源主要分布在河北、北京、天津、山西、陕西、甘肃、内蒙古、黑龙江、吉林、辽宁、山东、河南、青海、宁夏、新疆等15个省区市。其中河北省境内长度2000多千米，陕西省境内长度1838千米 [8-16] 。根据文物和测绘部门的全国性长城资源调查结果，明长城总长度为8851.8千米，秦汉及早期长城超过1万千米，总长超过2.1万千米。 [17] 1961年3月4日，长城被国务院公布为第一批全国重点文物保护单位 [18] 。1987年12月，长城被列入世界文化遗产
+                                    </p>
+
+                                    <h3>烽燧</h3>
+                                    <hr class="hr-add">
+                                    <p>长城体系中设置有大量烽燧（烽火台）作为情报传递系统，是最古老但行之有效的消息传递方式。</p>
+                                    <p>古代边防报警有两种信号，遇有敌情发生，白天放烟叫“烽”，夜间举火叫“燧”，台台相连，传递讯息。白天燃烟，夜间举火，是因为白天阳光很强，火光不易看见，烟雾相对瞩目；而夜间烟雾不显，火光在很远处就能看见，这是很科学的方法。为了报告敌兵来犯的多少，还以燃烟、举火数目的多少来加以区别。到了明朝还在燃烟、举火数目的同时加放炮声，以增强报警的效果，使军情可迅速传达千里之外。按明朝制度，举一烟鸣一炮表示来敌100人左右；举二烟鸣二炮，来敌500人左右；1000人以上举三烟鸣三炮。按配置的位置和功能，烽燧可以分为四组：设在大漠深处的烽火台是发出警讯的最前线，沿长城两侧设置的烽火台向沿线传递情报，由长城通往京师的系列烽火台与王朝中央联系，还有一组烽火台与长城所在地附近的地方政府和驻军联系。</p>
+                                    <p>烽燧的建筑早于长城，但自长城出现后，长城沿线的烽火台便与长城密切结为一体，成为长城防御体系的一个重要组成部分，有的就建在长城之上。烽燧在汉代称作烽堠（烽候）、亭燧，唐宋称作烽台，并把“烽燧”一词也引申为烽火台，明代则一般称作烟墩或墩台（西北明代墩台，大的还有御敌之功能，小的则只有望而无点烽火之功能）。烽火台一般相距10里左右，明代也有距离5里左右的。</p>
+                                    <p>烽燧的布局也十分重要，关键为要将其布置在高山险处或峰回路转的地方，而且必须临近的三个烽燧都在彼此的视野范围内，以便于随时查看和传递消息。烽燧除了传递军情之外，还为来往使节保护安全，提供食宿、供应马匹粮秣等服务。有些地段的长城只设烽台、亭燧而不筑墙</p>
+
+                                    <h3>城堡</h3>
+                                    <hr class="hr-add">
+                                    <P>城堡按等级分为卫城、守御或千户所城和堡城，按防御体系和兵制要求配置在长城内侧，间有设于墙外者。</P>
+                                    <P>卫、所城之间相距约百余里，卫城周长6—9里，千户所城周长4—5里，砖砌城墙，外设马面、角楼，城门建瓮城，有的城门外还筑月城或正对瓮城门的翼城，以加强城门的控守。城内有衙署、营房、民居和寺庙。卫、所城与长城的距离或近或远，视长城内位置适中、地势平缓、便于屯垦的地方而建。</p>
+                                    <p>堡城或称边堡，间距10里左右，城周1—3里，砖包城垣，开1—2门，建瓮城门。城内有驻军营房、校场、寺庙，边堡同长城的间距一般不超过10里，遇警时可迅速登城。</P>
+
+                                    <h3>关城</h3>
+                                    <hr class="hr-add">
+                                    <p>关城是万里长城防线上最为集中的防御据点。关城设置的位置至关重要，均是选择在有利防守的地形之处，以达到以极少的兵力抵御强大的入侵者的效果，古称“一夫当关，万夫莫开”，生动地说明了关城的重要性</p>
+                                    <p>长城沿线的关城有大有小，数量很多。就以明长城的关城来说，大大小小有近千处之多。有些大的关城附近还带有许多小关，如山海关附近就有十多处小关城，共同组成了万里长城的防御工程建筑系统。</p>
+
+                                    <h3>主要关隘</h3>
+                                    <hr class="hr-add">
+                                    <p>长城关口有：嘉峪关、山海关、居庸关、玉门关、井陉关、娘子关、雁门关、偏头关、平型关、古北口、喜峰口、榆林塞、黄崖关、瓦桥关、虎山长城、鸦鹘关、牛庄城、分水关、宁远城、阳关、平定堡城、清阳关、新安关、镇远关、锦州城、马水口、倒马关、九门口、老龙头、董家口、刘家口、马兰关、新开口、插箭岭关、金山岭、独石口、张家口、马市口、羊房堡关、水口关、紫荆关、宣化城、三屯营、三道关、大毛山关、义院口、界岭口、重峪口、徐流口、冷口关、白洋峪关、青山关、铁门关、潘家口、龙井关、洪山口、上关、常峪口、狼窝沟口、新河口、白石口关、浮图峪关、乌龙沟关、飞狐口、寡妇楼、司马台、慕田峪关、沿河城、将军关、白马关、鹿皮关、河防口、莲花池关、黄花城关、撞道口关、九孔楼、四海冶口、居延塞故城、鸡鹿塞、高阙塞、大同城、杀虎口、威鲁堡口、金锁关、黄泽关、黄榆关、北楼口、宁武关、利民堡口、得胜口、镇宏堡口、平远堡、新平堡口、保平堡口、桦门堡、瓦窑口堡、镇宁堡口、镇口堡、守口堡口、镇边堡、镇川堡、宏赐堡口、镇羌堡口、拒墙堡口、拒门堡口、助马堡口、破鲁堡口、保安堡口、宁鲁堡口、破虎堡口、残虎堡口、马堡口、云石堡口、少家堡口、大河堡口、败虎堡口、迎恩堡口、阻虎堡口、将军会堡、丫角山、老营堡、红门口、老牛湾堡、阳方口、白草关口、广武城、北楼口、狼牙口、龙泉关、固关、鹤度岭口、马岭关、支锅岭口、峻极关、吴旗秦长城等</p>
+
+                                </P>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <footer class="footer footer-duiqi">
+                        <p class="icon-bar">
+                            <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </p>
+                        <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>

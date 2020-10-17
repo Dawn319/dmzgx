@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful China Travel</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/x-icon" href="./img/china.ico" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+</head>
+
+<body>
+    <div style="padding:0 16px;">
+        <!-- 第一个界面 -->
+        <div class="first bgimg" id="EXPLORE">
+            <button id="button1" class=" hover-shadow bgimg_explore" type="button" onclick="EXPLORE()">Start a Magnificent Journey to China</button>
+        </div>
+        <!-- 第二个界面 -->
+        <div>
+            <div class="firsts bgimg2 " id="HOME">
+                <!-- 导航栏 -->
+                <div class="container">
+                    <!-- 导航栏左边 -->
+                    <ul class="nav nav-h " style="background-color: transparent;">
+                        <li>
+                            <a href="" class="hover-shadow " style="font-size: 24px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                                <img src="./img/home.png" alt="">
+                                <span id="bct" class="font-color-h">
+                                Beautiful China Travel
+                            </span>
+                            </a>
+                        </li>
+                        <!-- 导航栏右边 -->
+                        <li class="right hover-shadow  dropdown ">
+                            <img style="padding: 10px; cursor: pointer;" src="./img/zyw.png" alt="">
+                            <div style="padding: 10px;" class="drop-content">
+                                <div style="padding-bottom: 2px;">
+                                    <img src="./img/zw.png" style="cursor: pointer;" onclick="ZW()" alt="">
+                                </div>
+                                <div style="padding-top: 2px;">
+                                    <img src="./img/yw.png" style="cursor: pointer;" onclick="YW()" alt="">
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="right hover-shadow " style="padding: 10px;">
+                            <img src="./img/user.png" style="cursor: pointer;" onclick="OPEN()" alt="">
+                        </li>
+                        <li>
+                            <div style="width: 200px;height: 10px;"></div>
+                        </li>
+                        <li class="right">
+                            <a href="architecture.html" class="hover-shadow nav-font">
+                                <img src="./img/build2.png" alt="">
+                                <span id="archi" class="font-color-h ">
+                                Architecture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="delicacy.html" class="hover-shadow nav-font">
+                                <img src="./img/meishi.png" alt="">
+                                <span id="delicacy" class="font-color-h ">
+                                Delicacy
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner1.html" class="hover-shadow nav-font">
+                                <img src="./img/ding.png" alt="">
+                                <span id="culture" class="font-color-h">
+                                Traditional Culture
+                            </span>
+                            </a>
+                        </li>
+                        <li class="right">
+                            <a href="inner2.html" class="hover-shadow nav-font">
+                                <img src="./img/recommend.png" alt="">
+                                <span id="recommend" class="font-color-h">
+                                Recommend
+                            </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- form表单+modal弹出 -->
+                    <div class="container">
+                        <div class="modal " id="OPEN">
+                            <div class="modal-dialog ">
+                                <div id="modalContent" class=" modal-content shadow-4 animation-zoom">
+                                    <div class="content shadow-2" style="background-color: sandybrown;">
+                                        <form action="#" method="POST">
+                                            <div class="form-group-label ">
+                                                <label for="name" class="floating-label">
+                                                <span id="name">
+                                                    Name
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="name" name="name" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="email" class="floating-label">
+                                                <span id="email">
+                                                    Email
+                                                </span>
+                                                </label>
+                                                <input type="text" class="form-control" id="email" name="email" value="">
+                                            </div>
+                                            <div class="form-group-label ">
+                                                <label for="city" class="floating-label">
+                                                <span id="city">
+                                                    City
+                                                </span>
+                                                </label>
+                                                <select class="form-control " name="city" id="city">
+                                                <option value=""></option>
+                                                <option value="">
+                                                    <span id="bj">
+                                                        Peking
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="sh">
+                                                        Shanghai
+                                                    </span>
+                                                    </option>
+                                                <option value="">
+                                                    <span id="gz">
+                                                        Guangzhou
+                                                    </span>
+                                                    </option>
+                                            </select>
+                                            </div>
+
+                                            <div class="form-group-label ">
+                                                <label for="context" class="floating-label">
+                                                <span id="content">
+                                                    Content
+                                                </span>
+                                                </label>
+                                                <textarea style="height: 150px;" id="context" name="context" class="form-control " id="" cols="80" rows="1"></textarea>
+                                            </div>
+                                            <div class="bar">
+                                                <button class="button" style="background-color: tomato;" type="button" onclick="CLOSE()">提交</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播图 -->
+                <div class="container">
+                    <div class="lbt">
+                        <img src="./img/lbt1.jpg" class="slide3 animate-fading lbt-r" width="1000 " height="600 " alt=" ">
+                        <img src="./img/lbt2.jpg " class="slide3 animate-fading lbt-r" style="display: none; " width="1000 " height="600 " alt=" ">
+                        <img src="./img/lbt3.png " class="slide3 animate-fading lbt-r" style="display: none; " width="1000 " height="600 " alt=" ">
+                    </div>
+                </div>
+                <!-- 具体介绍 -->
+                <div class="container">
+                    <!-- 精选介绍 -->
+                    <div class="container margin-top-32 margin-bottom-32">
+                        <div class="jxtj ">
+                            <a href="inner2.html">
+                                <div class="jxtj-c">
+                                    <img src="./img/star1.png" alt="">
+                                    <h2 id="fr" style="display: inline-block;margin: 10px 0 5px;font-weight: bold;" class="font-color-l">
+                                        Featured Recommended
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img ">
+                                    <img src="./img/l1-1.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./inner2.html" style="text-decoration: none;color: black;">
+                                        <span id="js1-1">
+                                            The Forbidden City, also known as the Forbidden City, was the imperial palace of the Ming and Qing dynasties, as well as a symbol and symbol of ancient China. When you are in the neat high-walled courtyard, you can truly feel its former glory.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l1-2.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./inner2-2.html" style="text-decoration: none;color: black;">
+                                        <span id="js1-2">
+                                            The mountains of Shennongjia are filled with gorges and peaks and ridges; the sky-carvings of canyons and the natural formations of strange caves; cliffs and waterfalls, Jinshi streams; A gallery of poetry and painting.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l1-3.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./inner2-3.html" style="text-decoration: none;color: black;">
+                                        <span id="js1-3">
+                                            Jiuzhaigou-World Natural Heritage, National Key Scenic Spots, National Nature Reserves, National Geoparks, World Biosphere Reserves Network, is the first nature reserve in China whose main purpose is to protect natural scenery. Orientals call it " Fairyland.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l1-4.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./inner2-4.html" style="text-decoration: none;color: black;">
+                                        <span id="js1-4">
+                                            Yunnan has always been the first choice for Chinese and foreign tourists to travel. The romantic atmosphere, mysterious people, and leisurely rhythm make you feel the beauty of harmonious coexistence between man and nature. 
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 传统文化为主 -->
+                    <div class="container margin-top-32 margin-bottom-32">
+                        <div class="jxtj">
+                            <a href="./inner1.html">
+                                <div class="jxtj-c">
+                                    <img src="./img/ding2.png" alt="">
+                                    <h2 id="tc" style="display: inline-block;margin: 10px 0 5px;font-weight: bold;" class="font-color-l">
+                                        Traditional Culture
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l2-1.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./architecture_4.html#bmy" style="text-decoration: none;color: black;">
+                                        <span id="js2-1">
+                                            Terracotta Warriors and Horses, also referred to as Qin Terracotta Warriors and Horses or Qin Warriors, are the first batch of national key cultural relics protection units and the first batch of China's World Heritage Sites.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l2-2.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./inner1-6.html" style="text-decoration: none;color: black;">
+                                        <span id="js2-2">
+                                            Wudang Mountain, the holy land of Chinese Taoism, also known as Taihe Mountain, was known as "Taiyue", "Xuanyue" and "Dayue" in ancient times. Taoism is a native religion in China, with "Tao" as the highest belief, and it is one of the five major religions in the world.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l2-3.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./inner1-4.html#cixiu" style="text-decoration: none;color: black;">
+                                        <span id="js2-3">
+                                            Shu embroidery, also known as "Chuan embroidery", is one of the four famous embroidery in China. Shu embroidery has formed its own unique charm with its bright and beautiful colors and exquisite needlework, and its richness ranks first among the four famous embroidery.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l2-4.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./inner1-7.html" style="text-decoration: none;color: black;">
+                                        <span id="js2-4">
+                                            The National Museum of China, located on the east side of Tiananmen Square in the center of Beijing, is a comprehensive museum with equal emphasis on history and art, integrating collection, exhibition, research, archeology, public education, and cultural exchanges.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 美食为主 -->
+                    <div class="container margin-top-32 margin-bottom-32">
+                        <div class="jxtj">
+                            <a href="delicacy.html">
+                                <div class="jxtj-c">
+                                    <img src="./img/xc.png" alt="">
+                                    <h2 id="de" style="display: inline-block;margin: 10px 0 5px;font-weight: bold;" class="font-color-l">
+                                        Delicacy
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l3-1.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./delicacy.html#huicai" style="text-decoration: none;color: black;">
+                                        <span id="js3-1">
+                                            Anhui cuisine, one of the eight traditional Chinese cuisines, is a unique and self-contained famous cuisine. Anhui cuisine is a local characteristic of the six counties in Huizhou, and its unique geographical and cultural environment gives it a unique flavor.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l3-2.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./delicacy.html#chuancai" style="text-decoration: none;color: black;">
+                                        <span id="js3-2">
+                                            Sichuan cuisine is one of the four traditional Chinese cuisines of the Han nationality, one of the eight Chinese cuisines, and a master of Chinese cuisine. It has a wide range of materials, changeable seasonings, diverse dishes, fresh taste and strong mellow.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l3-3.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./delicacy.html#lucai" style="text-decoration: none;color: black;">
+                                        <span id="js3-3">
+                                            Shandong cuisine is a Qilu cuisine originated in Boshan District, Zibo City, Shandong Province. It is the only spontaneous cuisine among the four traditional Chinese cuisines and a representative of the culinary culture of the Yellow River Basin.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l3-4.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./delicacy.html#yuecai" style="text-decoration: none;color: black;">
+                                        <span id="js3-4">
+                                            Cantonese cuisine is Guangdong cuisine, one of the four and eight traditional Chinese cuisines. Cantonese cuisine originates from the Central Plains, and inherits the Central Plains eating style of "not tired of eating fine, not tired of fine food" advocated by Confucius.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 传统建筑为主 -->
+                    <div class="container margin-top-32 margin-bottom-32">
+                        <div class="jxtj">
+                            <a href="architecture.html">
+                                <div class="jxtj-c">
+                                    <img src="./img/tower.png" alt="">
+                                    <h2 id="ar" style="display: inline-block;margin: 10px 0 5px;font-weight: bold;" class="font-color-l">
+                                        Architecture
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l4-1.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./architecture.html" style="text-decoration: none;color: black;">
+                                        <span id="js4-1">
+                                            The Big Wild Goose Pagoda is located in the Dacien Temple in Jinchangfang, Chang'an City, Tang Dynasty. The Big Wild Goose Pagoda is the oldest and largest existing brick pagoda in the Tang Dynasty.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l4-2.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./architecture_4.html" style="text-decoration: none;color: black;">
+                                        <span id="js4-2">
+                                            The Mausoleum of the First Emperor of Qin, the mausoleum of the first emperor Yingzheng in Chinese history, is the first large-scale and well-designed mausoleum of an emperor in Chinese history.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l4-3.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./architecture_5.html" style="text-decoration: none;color: black;">
+                                        <span id="js4-3">
+                                            Suzhou classical gardens show the essence of Chinese culture, have a unique historical position and significant artistic value in the history of gardening in the world, and are the leader and pride of Chinese garden culture.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l3 ddd-center">
+                                <div class="js-img">
+                                    <img src="./img/l4-4.jpg" style="border-radius: 5px;" class="js-img-100" alt="">
+                                </div>
+                                <div class="js-span">
+                                    <a href="./architecture_2.html" style="text-decoration: none;color: black;">
+                                        <span id="js4-4">
+                                            The Great Wall, also known as the Great Wall of China, is an ancient military fortification in China. The Great Wall is not only the longest construction time and the largest amount of engineering in China, the Great Wall is an ancient defense project in the world.
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- why chose us -->
+                    <div class="container">
+                        <div style="text-align: center;">
+                            <h2 style="font-weight: bolder;color: black;" class="bottom-bar">Why Chosse us
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <div class="col l3 m6 s12 padding-right">
+                                <div class="box-1 ">
+                                    <h3 id="h3-1" style="font-weight: bold;">Design</h3>
+                                    <p id="p1">Provide customers with the ultimate design service-tailor-made-one-to-one exclusive service-rich experience</p>
+                                </div>
+                            </div>
+                            <div class="col l3 m6 s12 padding-right">
+                                <div class="box-2">
+                                    <h3 id="h3-2" style="font-weight: bold;">Brand</h3>
+                                    <p id="p2">Top team, strong background strength, caring service, high-end customization, affordable price</p>
+                                </div>
+                            </div>
+                            <div class="col l3 m6 s12 padding-right">
+                                <div class="box-3">
+                                    <h3 id="h3-3" style="font-weight: bold;">Program</h3>
+                                    <p id="p3">Every plan strives to be classic, tailor-made, dedicated in all aspects, and do the best for customers</p>
+                                </div>
+                            </div>
+                            <div class="col l3 m6 s12">
+                                <div class="box-4">
+                                    <h3 id="h3-4" style="font-weight: bold;">Vouchsafement</h3>
+                                    <p id="p4" class="cus-font">Provide customers with a good experience and ultimate design services, gather industry experts, form a top team, and provide customers with ultimate design services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="container">
+                    <div class="container">
+                        <div style="text-align: center;">
+                            <h2 style="font-weight: bolder;color: black;" class="bottom-bar">About Us
+                            </h2>
+                        </div>
+                        <footer class="footer">
+                            <p class="icon-bar">
+                                <a href="./index.html" target="_blank"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                <a href="./index.html" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                                <a href="./index.html" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="./index.html" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="./index.html" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            </p>
+                            <p style="font-size: large; font-family: 'Times New Roman', Times, serif;">Powered by <a href="./index.html" style="font-size: large; font-family: 'Times New Roman', Times, serif;" target="_blank">AHPU</a></p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js "></script>
+</body>
+
+</html>
